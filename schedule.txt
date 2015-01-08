@@ -1,0 +1,17 @@
+﻿---------------------------------
+1. 자바 (java) 7주
+ - JDBC : 값, 저장, DB
+ 
+2. Web program 3주 + 1주 (javascript, ajax, jquery)
+ - Servlet/jsp
+ - framework
+	MyBatis : DB 1주
+	Spring : WAS 3주
+	
+3. Android 2, 3주
+native app
+mobile web app (JQuery Mobile)
+hybrid app (폰갭)
+ --------------------------------- 20주
+
+<프로젝트> 4주
