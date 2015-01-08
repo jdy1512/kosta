@@ -8,4 +8,12 @@ www.oracle.com = java.sun.com
 범용적인 프로그램 사용을 위해 개발됨
 - Compiled 방식 : 사람이 이해하는 언어(highlevel)
 	compile : highlevel(소스코드) -> lowlevel(2진언어, 실제 실행)
-- Interpreted 방식 : 
+- Interpreted 방식 : 매 라인마다 실행
+*JVM - Java 인터프리터
+소스코드(high-level) -> 컴파일(.java) -> byte code(.class, JVM이 이해하는 언어) -> Java실행파일 생성
+<<컴파일 시점
+
+1)class loading : class 파일들을 메모리에 올리는 작업
+2)검증
+3)실행, 명령문 단위로 처리(byte코드 -> 기계어)
+<<실행시점
