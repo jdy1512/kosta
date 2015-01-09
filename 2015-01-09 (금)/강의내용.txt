@@ -31,4 +31,14 @@ Java 특징 - WORA (Write Once Run Anywhere)
 	4.멀티쓰레딩 지원
 	5.동적class로딩
 	
-객체 지향 언어
+객체 (Object) - 존재하는것
+	- 프로그램 내에서 독립적인 업무를 처리 할수있는 모듈
+	- 존재 : 유형, 무형
+	- 구성요소 : 속성(Attribute), 동작(Operation)
+	
+* OOP -> 객체간의 연관성을 가지고 P/G을 실행하도록 만드는 것.
+
+class - 객체의 설계도
+	- 객체가 가지는 Attribute와 Operation들의 틀을 설계한 것.
+	- Program을 만드는 것은 객체가 아닌 class를 만드는 것.
+	- class로부터 객체를 생성.
