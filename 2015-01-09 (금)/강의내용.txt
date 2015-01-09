@@ -2,18 +2,33 @@
 -highlevel언어 -> 변환(compiled-번역, interpreter-통역) -> lowlevel언어(기계어)
 
 Compiled
-장점: 속도가 빠르다.
-단점: O/S 종속적.
-
+	장점: 속도가 빠르다.
+	단점: O/S 종속적.
 Interpreted
-장점: O/S 독립적.
-단점: 속도가 느리다.
+	장점: O/S 독립적.
+	단점: 속도가 느리다.
 
+--------------------------------------
 자바 compiler
-1.소스코드 최적화.
-2.기본적인 오류체크.
-
+	1.소스코드 최적화.
+	2.기본적인 오류체크.
 자바 interpreter
-1.class loading
-2.검증
-3.실행
+	1.class loading
+	2.검증
+	3.실행
+
+* JRE (Java Runtime Environment) 
+	- JVM (Java Virtual Machine) : Java Interpreter (실행기)
+	- API (Apstract Programming Interface) - 자주 사용되는 기능코드를 미리 작성해 제공하는 것. = library
+		- Core API : 기본 제공 API
+		- 확장 API
+* JRE + 개발 utility = JDK (Java Development Kit)
+
+Java 특징 - WORA (Write Once Run Anywhere)
+	1.Platform(O/S) 독립적
+	2.객체지향언어(OOP) - Object Oriented Programming
+	3.쉽다 - JVM이 다양한 기능들을 처리/관리 해준다.
+	4.멀티쓰레딩 지원
+	5.동적class로딩
+	
+객체 지향 언어
