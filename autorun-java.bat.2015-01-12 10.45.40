@@ -1,2 +1,0 @@
-cd $(CURRENT_DIRECTORY)
-java $(NAME_PART)
