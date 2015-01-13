@@ -1,0 +1,9 @@
+UML
+	- 속성 : name:String
+	- 동작 : setName(name:String):String
+
+메소드(method)
+	- [제한자]returnType 이름([매개변수선언])
+	- public int stydy(String subject){}
+
+생성자(constructor)
