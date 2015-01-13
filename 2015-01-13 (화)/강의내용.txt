@@ -7,3 +7,15 @@ UML
 	- public int stydy(String subject){}
 
 생성자(constructor)
+	- 객체 생성시 한번 호출되어 실행되는 객체의 동작(behavior)
+	- [제한자] Class이름([매개변수,...]){구현}
+	- 리턴타입이 없다.
+	- 이름은 Class이름과 같아야한다.
+	- public, protected, private, x -> 접근 제한자 (Access Modifier)
+	- 역할 : 객체 생성시 Instance 변수 값 초기화 작업
+	
+기본 생성자(default constructor)
+	- class에 생성자가 하나도 없으면 Compiler가 넣어 주는 생성자.
+	
+생성자 오버로딩
+	- 매개변수의 개수 또는 DataType이 다르다면 한 class내에 여러개의 생성자를 구현 할 수 있다.
