@@ -11,6 +11,8 @@ public class Member{
 		this.mileage = mileage;
 	}
 	
+	public Member(){}
+	
 	public String getMemberDetails(){
 		return "id : " + id + ", password : " + password + ", name : " + name + ", mileage : " + mileage;
 	}

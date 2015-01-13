@@ -14,5 +14,9 @@ public class TestMember{
 		m2.mileage += 3000;
 		m2Info = m2.getMemberDetails();
 		System.out.println("m2 변경후 정보 : " + m2Info);
+		
+		System.out.println("==================");
+		System.out.println(new Member().getMemberDetails());
+		System.out.println("==================");
 	}
 }

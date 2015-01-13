@@ -10,10 +10,15 @@
         <File name="2015-01-12 (&#xC6D4;)\&#xAC15;&#xC758;&#xB0B4;&#xC6A9;.txt" />
     </Project>
     <Project name="2015-01-13 (&#xD654;)">
+        <File name="2015-01-13 (&#xD654;)\Member.class" />
+        <File name="2015-01-13 (&#xD654;)\Member.java" />
         <File name="2015-01-13 (&#xD654;)\Student.class" />
         <File name="2015-01-13 (&#xD654;)\Student.java" />
+        <File name="2015-01-13 (&#xD654;)\TestMember.class" />
+        <File name="2015-01-13 (&#xD654;)\TestMember.java" />
         <File name="2015-01-13 (&#xD654;)\TestStudent.class" />
         <File name="2015-01-13 (&#xD654;)\TestStudent.java" />
         <File name="2015-01-13 (&#xD654;)\&#xAC15;&#xC758;&#xB0B4;&#xC6A9;.txt" />
     </Project>
+    <Project name="test" />
 </NotepadPlus>
