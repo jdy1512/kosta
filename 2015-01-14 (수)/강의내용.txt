@@ -1,0 +1,5 @@
+객체
+	- 속성 (instance변수)
+	- 동작
+		- 생성자(constructor) : 객체 생성시 한번 호출
+		- 메소드(method) : 기능
