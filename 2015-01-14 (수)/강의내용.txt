@@ -18,11 +18,3 @@ private - 같은 class안에서만 접근 가능
 package(default) - 같은 디렉토리 접근 가능
 protected - 상속 관계 접근 가능
 public - 누구든 접근 가능	
-
-	
-	
-
-	
-	
-	
-변수 메모리 할당 시점
