@@ -1,0 +1,27 @@
+private - 은닉
+public - open
+
+class
+	- Data(값)으로 사용할 class =-> Instance변수 중심
+		- Value Object (VO), Data Transfer Object (DTO)
+	- 업무를 처리하기위한 class -> Instance 메소드 중심
+	
+package : class들을 모아놓은 directory(folder)
+	- root경로[.하위경로.*];
+		- package member;
+		- package member.dao;
+	- package선언이 소스코드의 첫 명령어로 와야함
+	- 경로 level의 개수 제한은 없다.
+	- package명령 규칙 및 관례(소문자로준다)
+	- domain주소 이용해 만든다.
+		- package kr.or.kosta(kosta.or.kr)
+
+import
+	- 다른 package에 있는 class 사용하기
+		- class의 전체 이름 (package명.class명)을 다 선언(표기)한다.
+		- import구문을 이용 -> 사용할 class가 어느 package에 있는지 미리 선언하는 것.
+		
+소스코드
+	- package선언
+	- import구문
+	- class선언 (여러개 구현 가능, public class는 한개만 가능 -> 소스코드 파일명이 된다.)
