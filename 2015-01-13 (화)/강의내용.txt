@@ -1,0 +1,38 @@
+UML
+	- 속성 : name:String
+	- 동작 : setName(name:String):String
+
+메소드(method)
+	- [제한자]returnType 이름([매개변수선언])
+	- public int stydy(String subject){}
+
+생성자(constructor)
+	- 객체 생성시 한번 호출되어 실행되는 객체의 동작(behavior)
+	- [제한자] Class이름([매개변수,...]){구현}
+	- 리턴타입이 없다.
+	- 이름은 Class이름과 같아야한다.
+	- public, protected, private, x -> 접근 제한자 (Access Modifier)
+	- 역할 : 객체 생성시 Instance 변수 값 초기화 작업
+	
+기본 생성자(default constructor)
+	- class에 생성자가 하나도 없으면 Compiler가 넣어 주는 생성자.
+	
+생성자 오버로딩
+	- 매개변수의 개수 또는 DataType이 다르다면 한 class내에 여러개의 생성자를 구현 할 수 있다.
+	
+instance variable :
+
+선언 위치 : class block 내에 선언
+
+사용 범위 : class 안에 모든 Instance, 메소드, 생성자에서 접근 가능
+
+           객체 생성 이후 타 class에서도 사용 가능
+
+기본 초기화 : 변수 datatype의 기본값으로 초기화 됨.
+
+local variable(automatic variable, temprary variable) : 
+
+선언 위치 : method, construction 내 선언
+
+사용 범위 : 선언된 메소드, 생성자 내에서 사용가능
+기본 초기화 안됨.
