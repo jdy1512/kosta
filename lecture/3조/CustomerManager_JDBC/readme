@@ -1,0 +1,12 @@
+1. customer 테이블 생성
+ - 테이블 명세서, 생성 (모든 컬럼은 not null)
+
+2. DAO (Customer와 관련된) 클래스 구현
+ - BasicDataSource를 이용해 Connection 생성 (관리 클래스 필요)
+ - 싱글톤 패턴으로 구현
+ - 메소드 CustomerService를 참조해서 구현
+  - Class Diagram 그려보세요.
+ 
+3. CustomerService - 고객과 관련된 Business Logic 처리
+ - DB관련 처리는 DAO의 메소드를 호출해서 처리
+ - 싱글톤 패턴으로 구현
