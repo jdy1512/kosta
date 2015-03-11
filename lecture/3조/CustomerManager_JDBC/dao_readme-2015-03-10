@@ -1,0 +1,36 @@
+1. customer 테이블 생성
+  -> create table customer (
+  		c_id varchar2(10) primary key,
+  		c_pwd varchar2(128) not null,
+  		c_name varchar2(128) not null,
+  		c_email varchar2(256) not null,
+  		c_phone char(13) not null,
+  		c_mileage number not null
+  	)
+
+2. DAO (Customer와 관련된) 클래스 구현
+  -> 
+  	class DataUtil {
+  		// 싱글톤 클래스
+  		
+  		// BasicDataSource 생성
+  	}
+  	
+  	class CustomerDAO {
+  		
+  		// insertCustomer()
+  		
+  		// selectCustomerById()
+  		
+  		// selectAllCustomers()
+  		
+  		// selectCustomerByName()
+  		
+  		// selectCustomerByMileageRange()
+  		
+  		// updateCustomerInfo()
+  		
+  		// deleteCustomerById()
+  	}
+ 
+3. CustomerService - 고객과 관련된 Business Logic 처리
