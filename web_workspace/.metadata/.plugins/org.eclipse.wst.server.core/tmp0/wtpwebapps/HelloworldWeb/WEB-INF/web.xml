@@ -19,4 +19,14 @@
   	<servlet-name>hello</servlet-name>
   	<url-pattern>/helloServlet</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>introduction</servlet-name>
+	  <servlet-class>web.hello.IntroductionServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>introduction</servlet-name>
+  	<url-pattern>/introductionServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -21,10 +21,13 @@ public class HelloServlet extends HttpServlet {
 		
 		response.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = response.getWriter();
+		out.println("<!doctype html>");
+		out.println("<html><head><title>sss</title></head><body>");
 		out.println("안녕하세요</br>");
 		out.println("반갑습니다.</br>");
 		out.println("저는 김철수 입니다.</br>");
 		out.println("현재 시간 : " + now);
+		out.println("</body></html>");
 	}
 	
 }
