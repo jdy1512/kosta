@@ -1,0 +1,32 @@
+package servlet.form;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class CalculateServlet extends HttpServlet {
+
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException, NumberFormatException {
+		
+		double x = Double.parseDouble(req.getParameter("xValue"));
+		double y = Double.parseDouble(req.getParameter("yValue"));
+		char operator = req.getParameter("operator").charAt(0);
+		
+		switch (operator) {
+		case '+':
+			
+			break;
+		case '-':
+			break;
+		case 'x':
+			break;
+		case '/':
+			break;
+		}
+	}
+}

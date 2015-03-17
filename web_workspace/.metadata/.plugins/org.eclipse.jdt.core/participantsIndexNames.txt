@@ -1,3 +1,5 @@
 INDEX VERSION 1.127
+C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1379672839.index
+\MyWeb\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1153755489.index
 \HelloworldWeb\src

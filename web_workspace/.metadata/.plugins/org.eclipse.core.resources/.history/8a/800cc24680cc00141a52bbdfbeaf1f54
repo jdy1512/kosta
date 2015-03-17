@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>로그인 폼</h2>
+	<form action="/myweb/login" method="post">
+		<table border="1">
+			<tr>
+				<td>ID</td>
+				<td><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="로그인"></td>
+			</tr>
+		</table>
+	</form>
+	
+	<hr/>
+	<br/><br/>
+	<form action="/myweb/login2" method="post">
+		<table width="450" height="300" align="center" bgcolor="#e0ffd0">
+			<tr>
+				<td colspan="2" align="center">
+					<font size="7" color="#f0a0b0" face="나눔명조" style="font-weight:bold;letter-spacing:5pt">L</font>
+					<font size="7" color="#a0b0c0" face="나눔명조" style="font-weight:bold;letter-spacing:5pt">o</font>
+					<font size="7" color="#a0f0b0" face="나눔명조" style="font-weight:bold;letter-spacing:8pt">g</font>
+					<font size="7" color="#707070" face="나눔명조" style="font-weight:bold;letter-spacing:8pt">-</font>
+					<font size="7" color="#f0d0a0" face="나눔명조" style="font-weight:bold;letter-spacing:5pt">i</font>
+					<font size="7" color="#abcdef" face="나눔명조" style="font-weight:bold;">n</font>
+				</td>
+			</tr>
+			<tr>
+				<td align="right"><font color="#555555">ID : </font></td>
+				<td align="center"><input type="text" name="id" bgcolor="#e0e0e0"></td>
+			</tr>
+			<tr>
+				<td align="right"><font color="#555555">Password : </font></td>
+				<td align="center"><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="submit" value="로그인" style="width:70%;height:60%"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
