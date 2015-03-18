@@ -71,4 +71,26 @@
   	<url-pattern>/login2</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>dispatch</servlet-name>
+  	<servlet-class>servlet.dispatch.BasicDispatchTestServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>dispatch</servlet-name>
+  	<url-pattern>/basicDispatch</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>calc2</servlet-name>
+  	<servlet-class>servlet.form.CalculateServlet2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>calc2</servlet-name>
+  	<url-pattern>/calc2</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

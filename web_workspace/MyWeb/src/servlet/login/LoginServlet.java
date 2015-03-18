@@ -3,6 +3,7 @@ package servlet.login;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -37,8 +38,11 @@ public class LoginServlet extends HttpServlet {
 		if (flag) {// 성공
 			out.println(id + "님 로그인 성공했습니다.");
 		} else {// 실패
-			out.println(failMessage + "<br/>");
-			out.println("<a href='/myweb/form/login_form.html'>로그인폼</a>");
+			req.setAttribute("fail_message", failMessage);
+			RequestDispatcher rdp = req.getRequestDispatcher("/form/login_fail.jsp");
+			rdp.forward(req, resp);
+//			out.println(failMessage + "<br/>");
+//			out.println("<a href='/myweb/form/login_form.html'>로그인폼</a>");
 		}
 		
 		out.println("</body></html>");

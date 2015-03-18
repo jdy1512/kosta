@@ -1,0 +1,5 @@
+package servlet.dispatch;
+
+public class BasicDispatchTestServlet {
+
+}

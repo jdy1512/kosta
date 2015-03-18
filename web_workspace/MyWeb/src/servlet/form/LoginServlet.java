@@ -1,8 +1,8 @@
 package servlet.form;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -36,7 +36,10 @@ public class LoginServlet extends HttpServlet {
 		if (flag) {// 성공
 			resp.sendRedirect("/myweb/form/login_success.html");// Web 브라우저가 요청할 URL
 		} else {// 실패
-			resp.sendRedirect("/myweb/form/login_fail.html");
+//			resp.sendRedirect("/myweb/form/login_fail.html");
+			req.setAttribute("fail_message", failMessage);
+			RequestDispatcher rdp = req.getRequestDispatcher("/form/login_fail.jsp");
+			rdp.forward(req, resp);
 		}
 	}
 }
