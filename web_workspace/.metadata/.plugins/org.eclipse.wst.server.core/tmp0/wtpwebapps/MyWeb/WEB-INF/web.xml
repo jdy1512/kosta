@@ -13,6 +13,10 @@
   <servlet>
   	<servlet-name>counter</servlet-name>
   	<servlet-class>servlet.basic.CounterServlet</servlet-class>
+  	<init-param>
+  		<param-name>filePath</param-name>
+  		<param-value>C:\\Users\\KOSTA_03_001_\\Desktop\\kosta\\file_storage\\counter.bat</param-value>
+  	</init-param>
   </servlet>
   
   <servlet-mapping>
@@ -91,6 +95,73 @@
   <servlet-mapping>
   	<servlet-name>calc2</servlet-name>
   	<url-pattern>/calc2</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+  <servlet-name>Korean Greeting</servlet-name>
+  <servlet-class>servlet.initparam.GreetingServlet</servlet-class>
+  <!--  초기파라미터 등록 -->
+  <init-param>
+     <param-name>greeting</param-name>
+     <param-value>안녕하세요</param-value>
+  </init-param>
+  <init-param>
+     <param-name>email</param-name>
+     <param-value>adasdf@kosta.or.kr</param-value>
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Korean Greeting</servlet-name>
+  	<url-pattern>/korGreeting</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>English Greeting</servlet-name>
+  	<servlet-class>servlet.initparam.GreetingServlet</servlet-class>
+  	<init-param>
+  		<param-name>greeting</param-name>
+  		<param-value>Hi~!</param-value>
+  	</init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>English Greeting</servlet-name>
+  	<url-pattern>/engGreeting</url-pattern>
+  </servlet-mapping>
+  
+  <!-- context param -->
+  <context-param>
+  	<param-name>driver</param-name>
+  	<param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>url</param-name>
+  	<param-value>jdbc:oracle:thin:@127.0.0.1:1521:XE</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>username</param-name>
+  	<param-value>scott</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>password</param-name>
+  	<param-value>tiger</param-value>
+  </context-param>
+  
+  <!-- jdbc -->
+  <servlet>
+  	<servlet-name>searchByIdFromDepartment</servlet-name>
+  	<servlet-class>department.servlet.SearchByIdServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>searchByIdFromDepartment</servlet-name>
+  	<url-pattern>/searchByIdFromDepartment</url-pattern>
   </servlet-mapping>
   
 </web-app>

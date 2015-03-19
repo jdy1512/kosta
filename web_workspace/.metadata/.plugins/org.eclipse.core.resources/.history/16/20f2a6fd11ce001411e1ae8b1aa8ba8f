@@ -1,0 +1,20 @@
+package department.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class SearchByIdServlet extends HttpServlet {
+
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		req.setCharacterEncoding("UTF-8");
+		String id = req.getParameter("id");
+		if (id == null) resp.setContentType("text/html;charset=utf-8").getWriter().println("ID를 입력하세요.");
+		
+	}
+}

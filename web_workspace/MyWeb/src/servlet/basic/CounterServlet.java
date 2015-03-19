@@ -9,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,12 +20,15 @@ import javax.servlet.http.HttpServletResponse;
  * destroy() - counter변수의 값을 파일에 저장
  */
 public class CounterServlet extends HttpServlet {
-	private String filePath = "C:\\Users\\KOSTA_03_001_\\Desktop\\kosta\\file_storage\\counter.bat";
+//	private String filePath = "C:\\Users\\KOSTA_03_001_\\Desktop\\kosta\\file_storage\\counter.bat";
+	private String filePath; // 초기 파라미터로 부터 조회
 	private int counter;// 요청자의 counter 값(몇번째 요청한 것인지)를 저장할 변수.
 	
 	
 	@Override
 	public void init() throws ServletException {
+		ServletConfig config = getServletConfig();
+		filePath = config.getInitParameter("filePath");
 		DataInputStream dis = null;
 		try {
 			File file = new File(filePath);

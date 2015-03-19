@@ -1,0 +1,12 @@
+package kr.co.kosta.study.moviereservation.vo;
+
+public class Customer {
+	private String id;
+	private String pwd;
+	private String fname;
+	private String lname;
+	private String birth;
+	private String email;
+	private String phoneNo;
+	private String joinDate;
+}
