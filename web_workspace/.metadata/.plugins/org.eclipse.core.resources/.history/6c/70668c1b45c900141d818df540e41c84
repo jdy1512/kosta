@@ -1,5 +1,0 @@
-package servlet.lifecycle;
-
-public class LifecycleServlet {
-
-}

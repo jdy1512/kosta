@@ -1,7 +1,0 @@
-package servlet.lifecycle;
-
-import javax.servlet.http.HttpServlet;
-
-public class LifecycleServlet extends HttpServlet {
-
-}

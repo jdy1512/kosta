@@ -1,4 +1,6 @@
 INDEX VERSION 1.127
+C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2105185960.index
+\MyWeb\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3387904646.index
 \MyWeb\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1379672839.index

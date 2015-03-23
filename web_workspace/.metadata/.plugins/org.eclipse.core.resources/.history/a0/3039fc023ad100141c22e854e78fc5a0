@@ -1,0 +1,38 @@
+package kr.co.kosta.study.moviereservation.util;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
+
+public class UtilManager {
+	private static UtilManager dataUtil = new UtilManager();
+	
+	// 각종 Listener 관리
+	private DataUtilListener dataUtilListener;
+	
+	private UtilManager() {
+		dataUtilListener = DataUtilListener.getInstance();
+	}
+	
+	public static UtilManager getInstance() {
+		return dataUtil;
+	}
+	
+	public Connection getConnection() throws SQLException {
+		return dataSource.getConnection();
+	}
+	
+	public void close(Connection conn, Statement stmt) throws SQLException {
+		if (stmt != null) stmt.close();
+		if (conn != null) conn.close();
+	}
+	
+	public void close(Connection conn, Statement stmt, ResultSet rset) throws SQLException {
+		if (rset != null) rset.close();
+		if (stmt != null) stmt.close();
+		if (conn != null) conn.close();
+	}
+}

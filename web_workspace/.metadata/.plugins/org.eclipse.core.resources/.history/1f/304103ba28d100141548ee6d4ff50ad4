@@ -1,0 +1,42 @@
+package servlet.session;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class SessionLoginServlet extends HttpServlet {
+	private Map<String, String> userInfo;// id, password
+	
+	@Override
+	public void init() throws ServletException {
+		userInfo = new HashMap<String, String>();
+		userInfo.put("id-1", "1111");
+		userInfo.put("id-2", "2222");
+		userInfo.put("id-3", "3333");
+		userInfo.put("id-4", "4444");
+		userInfo.put("id-5", "5555");
+	}
+
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		doPost(req, resp);
+	}
+	
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		// 요청 파라미터 조회
+		
+		
+		// 비지니스로직처리 - 로그인 처리
+		
+		
+		// 처리결과 응답
+	}
+}

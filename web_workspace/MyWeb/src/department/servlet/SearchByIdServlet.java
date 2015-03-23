@@ -12,15 +12,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import util.DataUtil;
+import util.DataUtilListener;
 
 public class SearchByIdServlet extends HttpServlet {
-	private DataUtil dataUtil;
+	private DataUtilListener dataUtilListener;
 
 	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		dataUtil = DataUtil.getInstance(getServletContext());
+		dataUtilListener = DataUtilListener.getInstance();
 		
 		req.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html;charset=utf-8");
@@ -39,7 +39,7 @@ public class SearchByIdServlet extends HttpServlet {
 		ResultSet rset = null;
 		String result = "";
 		try {
-			conn = dataUtil.getConnection();
+			conn = dataUtilListener.getConnection();
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, id);
 			rset = pstmt.executeQuery();
@@ -53,7 +53,7 @@ public class SearchByIdServlet extends HttpServlet {
 			e.printStackTrace();
 		} finally {
 			try {
-				dataUtil.close(conn, pstmt, rset);
+				dataUtilListener.close(conn, pstmt, rset);
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}

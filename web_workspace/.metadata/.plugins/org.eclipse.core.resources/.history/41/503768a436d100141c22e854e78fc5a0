@@ -1,0 +1,5 @@
+package kr.co.kosta.study.moviereservation.util;
+
+public class DataUtilListener {
+
+}

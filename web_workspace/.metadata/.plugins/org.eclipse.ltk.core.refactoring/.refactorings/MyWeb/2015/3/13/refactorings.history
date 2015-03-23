@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;util.DataUtil&apos; to &apos;DataUtilListener&apos;&#x0D;&#x0A;- Original project: &apos;MyWeb&apos;&#x0D;&#x0A;- Original element: &apos;util.DataUtil&apos;&#x0D;&#x0A;- Renamed element: &apos;util.DataUtilListener&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DataUtil&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;util{DataUtil.java[DataUtil" matchStrategy="1" name="DataUtilListener" qualified="false" references="true" similarDeclarations="false" stamp="1427070282349" textual="false" version="1.0"/>
+</session>

@@ -1,5 +1,0 @@
-package servlet.basic;
-
-public class CounterServlet {
-
-}
