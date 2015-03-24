@@ -10,17 +10,15 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <!-- Listener 컴포넌트 등록 -->
+  <!-- Listener 컴포넌트 등록 
   <listener>
      <listener-class>servlet.listener.MyListener</listener-class>
   </listener>
   
-    <!-- Listener 컴포넌트 등록 -->
   <listener>
      <listener-class>servlet.listener.BasicDataSourceListener</listener-class>
   </listener>
-  
-  
+  -->
   
   <!-- App-lication내의 모든 Component들(Servlet/JSP/Listener)이 공통으로 사용할 초기파라미터설정 -->
   <context-param>
@@ -215,6 +213,38 @@
   <servlet-mapping>
   <servlet-name>logout</servlet-name>
   <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 쇼핑 리스트 -->
+  <servlet>
+  	<servlet-name>shoppingList</servlet-name>
+  	<servlet-class>servlet.session.cart.ShowShoppingListServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>shoppingList</servlet-name>
+  	<url-pattern>/shoppingList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>shoppingCart</servlet-name>
+  	<servlet-class>servlet.session.cart.ShoppingCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>shoppingCart</servlet-name>
+  	<url-pattern>/shoppingCart</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Redirect 처리 서블릿 -->
+  <servlet>
+  	<servlet-name>redirect</servlet-name>
+  	<servlet-class>servlet.session.RedirectServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>redirect</servlet-name>
+  	<url-pattern>/redirect</url-pattern>
   </servlet-mapping>
   
 </web-app>

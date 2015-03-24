@@ -33,7 +33,7 @@
 			
 			<tr>
 				<td align="right"><font color="#555555">ID</font></td>
-				<td align="center"><input type="text" name="id" size="15"></td>
+				<td align="center"><input type="text" name="id" size="15" autofocus="autofocus"></td>
 			</tr>
 			<tr>
 				<td align="right"><font color="#555555">Password</font></td>

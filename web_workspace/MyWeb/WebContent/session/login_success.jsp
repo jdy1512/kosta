@@ -10,6 +10,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%= loginId %>
+	<a href="/myweb/logout">로그아웃</a>
+	&nbsp;&nbsp;
+	<a href="/myweb/shoppingList">상품목록</a>
 </body>
 </html>

@@ -1,0 +1,5 @@
+package servlet.session;
+
+public class RedirectServlet {
+
+}

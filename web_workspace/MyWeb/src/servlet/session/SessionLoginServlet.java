@@ -44,7 +44,7 @@ public class SessionLoginServlet extends HttpServlet {
 		String failMessage = null;// 로그인 실패의 경우 실패 이유 저장할 변수.
 		if (userInfo.containsKey(requestUserId)) {// id비교-성공
 			if (userInfo.get(requestUserId).equals(requestUserPassword)) {// password비교-성공
-				session.setAttribute("login_info", requestUserId);
+				session.setAttribute("loginInfo", requestUserId);
 //				req.setAttribute("result", requestUserId + "님 로그인 성공");
 			} else {// password 틀린 경우
 				failMessage = "Password가 틀립니다.";
