@@ -2,9 +2,10 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
-		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\KOSTA_03_001_\Desktop\SimpleLoginCart_WithFilter"/>
 			<item value="C:\Users\KOSTA_03_001_\Desktop\kosta_study_group\[Project1] MovieReservation\MovieReservation_Web"/>
 			<item value="C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\HelloworldWeb"/>
 		</list>

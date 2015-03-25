@@ -1,0 +1,5 @@
+package servlet.cookie;
+
+public class GetCookieServlet {
+
+}

@@ -1,8 +1,0 @@
-package servlet.form;
-
-import javax.servlet.http.HttpServlet;
-
-public class FormRequestServlet extends HttpServlet {
-
-	
-}

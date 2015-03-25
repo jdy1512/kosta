@@ -1,5 +1,0 @@
-package servlet.form;
-
-public class FormRequestServlet {
-
-}

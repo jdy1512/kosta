@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\HelloworldWeb" path="/HelloworldWeb" reloadable="true" source="org.eclipse.jst.jee.server:HelloworldWeb"/><Context docBase="C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyWeb" path="/myweb" reloadable="true" source="org.eclipse.jst.jee.server:MyWeb"/></Host>
+      <Context docBase="C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\SimpleLoginCart_WithFilter" path="/SimpleLoginCart_WithFilter" reloadable="true" source="org.eclipse.jst.jee.server:SimpleLoginCart_WithFilter"/></Host>
     </Engine>
   </Service>
 </Server>
