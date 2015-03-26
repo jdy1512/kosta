@@ -1,5 +1,0 @@
-package servlet.init.param;
-
-public class GreetingServlet {
-
-}

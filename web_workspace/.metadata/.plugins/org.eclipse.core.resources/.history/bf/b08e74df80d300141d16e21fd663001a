@@ -1,0 +1,24 @@
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.SimpleDateFormat" %>
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%!
+	// 선언자(declaration)태그 - JSP -> Servlet. 서블릿의 멤버 변수, 멤버 메소드를 선언
+	//                                          메소드 : jspInit(), jspDestroy() 오버라이딩시 사용
+	private int counter = 0;
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+	// scriptlet 태크 - _jspService() 에 들어갈 자바코드를 작성하는 태그.
+	counter++;
+	Date d = new Date();
+	SimpleDateFormat sdf = new SimpleDateForamt("HH:mm:ss");
+%>
+	당신은 <%= ++counter %>번째 방문자 입니다.
+</body>
+</html>

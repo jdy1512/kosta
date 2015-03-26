@@ -11,6 +11,8 @@ C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclips
 \MyWeb\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2105185960.index
 \MyWeb\src
+C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\706331840.index
+\myjsp\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1167061615.index
 \SimpleLoginCart_WithFilter\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3742131470.index
