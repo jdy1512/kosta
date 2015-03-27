@@ -1,0 +1,20 @@
+<%@page import="servlet.vo.Member"%>
+<%@ page contentType="text/html;charset=UTF-8"%>
+	<jsp:useBean id="member" class="servlet.vo.Member" scope="page"/>
+	<!-- jsp:setProperty name='member' property='name' value='이철수'/ -->
+	<jsp:setProperty name='member' property='*'/>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=UTF-8>
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>회원정보-response2.jsp</h2>
+	ID : <%=member.getId() %> <br/>
+	이름 : <%=member.getName() %>  <br/>
+	나이 : <%=member.getAge() %>  <br/>
+	결혼 여부 : <%=member.isMarriage()==true?"기혼":"미혼"%><br/>
+	
+</body>
+</html>
