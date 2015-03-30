@@ -7,6 +7,8 @@ C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclips
 \myjsp\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1153755489.index
 \HelloworldWeb\src
+C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2621149367.index
+\myjsp\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3387904646.index
 \MyWeb\src
 C:\Users\KOSTA_03_001_\Desktop\kosta\web_workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2328064382.index

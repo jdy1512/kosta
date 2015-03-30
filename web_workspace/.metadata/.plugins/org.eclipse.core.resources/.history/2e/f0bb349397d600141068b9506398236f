@@ -1,0 +1,21 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<%
+	request.setAttribute("name", "김영수");
+	request.setAttribute("age", 20);
+%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	이름 : ${ requestScope.name }<br/>
+	이름 (session) : ${ sessionScope.name } - session.getAttribute("name")<br/>
+	나이 : ${ requestScope.age }
+	<hr/>
+	<%
+		Address addr = new Address("addr-id", "222-333", "경기도 성남시 분당구 삼평동");
+	%>
+</body>
+</html>

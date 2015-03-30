@@ -1,7 +1,0 @@
-package kr.co.kosta.study.moviereservation.util;
-
-import javax.servlet.ServletContextListener;
-
-public class DataUtilListener implements ServletContextListener {
-
-}

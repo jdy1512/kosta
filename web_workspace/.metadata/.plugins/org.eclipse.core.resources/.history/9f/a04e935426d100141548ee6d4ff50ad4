@@ -1,7 +1,0 @@
-package servlet.session;
-
-import javax.servlet.http.HttpServlet;
-
-public class SessionLoginServlet extends HttpServlet {
-
-}

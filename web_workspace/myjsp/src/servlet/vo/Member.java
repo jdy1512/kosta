@@ -1,49 +1,71 @@
 package servlet.vo;
 
 public class Member {
+	private Address address;
 	private String id,password, name;
 	private int age;
 	private boolean marriage;
 	public Member(){}
-	public Member(String id, String password, String name, int age,boolean marriage) {
+
+	public Member(String id, String password, String name, int age,
+			boolean marriage, Address address) {
 		super();
 		this.id = id;
 		this.password = password;
 		this.name = name;
 		this.age = age;
 		this.marriage = marriage;
+		this.address = address;
 	}
-	
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
 	public String getPassword() {
 		return password;
 	}
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public int getAge() {
 		return age;
 	}
+
 	public void setAge(int age) {
 		this.age = age;
 	}
+
 	public boolean isMarriage() {
 		return marriage;
 	}
+
 	public void setMarriage(boolean marriage) {
 		this.marriage = marriage;
 	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

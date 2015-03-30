@@ -28,7 +28,7 @@ public class EncodingFilter implements Filter {
 		
 		String encoding = config.getInitParameter("uri_encoding");
 		request.setCharacterEncoding(encoding);
-		response.setContentType("text/html;charset=" + encoding);
+		response.setContentType("text/html; charset=" + encoding);
 		
 		arg2.doFilter(arg0, arg1);
 	}
