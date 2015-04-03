@@ -1,5 +1,0 @@
-package servlet.cookie;
-
-public class SetCookieServlet {
-
-}

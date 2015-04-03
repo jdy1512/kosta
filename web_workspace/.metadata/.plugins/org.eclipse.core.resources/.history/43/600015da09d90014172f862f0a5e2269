@@ -1,0 +1,46 @@
+package member.model.service;
+
+import java.util.Date;
+
+import member.vo.Member;
+
+public class MemberService {
+	private static MemberService instance = new MemberService();
+	
+	public static MemberService getInstance() {
+		return instance;
+	}
+	
+	public void joinMember(Member member) {
+		System.out.println("가입 : " + member);
+	}
+	
+	public void getMemberList() {
+		
+	}
+	
+	public Member getMemberById() {
+		return new Member("1", "2", "3", "4", new Date());
+	}
+	
+	public void modifyMember() {
+		
+	}
+	
+	public void removeMemberById() {
+		
+	}
+
+	
+	private void beginTransaction() {
+		
+	}
+	
+	private void endTransaction() {
+		
+	}
+	
+	private void rollback() {
+		
+	}
+}

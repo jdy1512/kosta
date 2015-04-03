@@ -1,0 +1,31 @@
+package common.util;
+
+import common.controller.Controller;
+import common.controller.LinkController;
+
+
+public class HandlerMapping {
+	private static HandlerMapping instance = new HandlerMapping();
+	
+	public static HandlerMapping getInstance() {
+		return instance;
+	}
+
+	public static Controller getController(String command) {
+		Controller controller = null;
+
+		// 업무처리 컨트롤러 호출
+		if (command.equals("register")) {
+			// controller = new RegisterController();
+			
+		} else if (command.equals("search")) {
+			// controller = new SearchController();
+			
+		} else if (command.equals("link")) {
+			controller = new LinkController();
+			
+		}
+
+		return controller;
+	}
+}

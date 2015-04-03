@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;MemberManagement/src/common.util&apos;&#x0D;&#x0A;- Original project: &apos;MovieReservation_Web&apos;&#x0D;&#x0A;- Destination element: &apos;MemberManagement/src/common.util&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     kr.co.kosta.study.moviereservation.util.UtilManager.java&#x0D;&#x0A;     kr.co.kosta.study.moviereservation.util.DataUtilListener.java" description="Copy compilation units" destination="=MemberManagement/src&lt;common.util" element1="/src&lt;kr.co.kosta.study.moviereservation.util{UtilManager.java" element2="/src&lt;kr.co.kosta.study.moviereservation.util{DataUtilListener.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1427951327533" units="2" version="1.0"/>
+</session>

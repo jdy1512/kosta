@@ -1,0 +1,14 @@
+package kr.co.kosta.study.moviereservation.dao;
+
+import kr.co.kosta.study.moviereservation.util.UtilManager;
+
+public class MovieDAO {
+	private static final MovieDAO movieDAO = new MovieDAO();
+	private UtilManager util;
+	
+	public MovieDAO() {
+		util = UtilManager.getInstance();
+	}
+	
+	
+}

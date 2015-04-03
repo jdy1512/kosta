@@ -1,0 +1,33 @@
+package member.controller;
+
+import java.sql.SQLException;
+import java.util.Date;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import member.exception.DuplicateIdException;
+import member.model.service.MemberService;
+import member.vo.Member;
+import common.controller.Controller;
+import common.vo.AttributeAndView;
+
+public class JoinMemberController implements Controller{
+
+	@Override
+	public AttributeAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		Date date = new Date();
+		
+		try {
+			MemberService.getInstance().joinMember(new Member(id, password, name, email, date));
+		} catch (SQLException sqle) {
+			throw new DuplicateIdException("ID가 중복되었습니다.");
+		}
+		
+		return new AttributeAndView(true, "/MemberManagement/controller?command=joinSuccess&id=" + id);
+	}
+}

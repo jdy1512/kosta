@@ -1,0 +1,60 @@
+package member.model.service;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Date;
+
+import common.util.DataUtilListener;
+import member.vo.Member;
+
+public class MemberService {
+	private static MemberService instance = new MemberService();
+	
+	public static MemberService getInstance() {
+		return instance;
+	}
+	
+	public void joinMember(Member member) {
+		Connection conn = null;
+		
+		
+		try {
+			conn = DataUtilListener.getConnection();
+			
+			
+		} catch(SQLException sqle) {
+			
+		} finally {
+			DataUtilListener.close(conn);
+		}
+	}
+	
+	public void getMemberList() {
+		
+	}
+	
+	public Member getMemberById() {
+		return new Member("1", "2", "3", "4", new Date());
+	}
+	
+	public void modifyMember() {
+		
+	}
+	
+	public void removeMemberById() {
+		
+	}
+
+	// 트랜잭션
+	private void beginTransaction() {
+		
+	}
+	
+	private void endTransaction() {
+		
+	}
+	
+	private void rollback() {
+		
+	}
+}

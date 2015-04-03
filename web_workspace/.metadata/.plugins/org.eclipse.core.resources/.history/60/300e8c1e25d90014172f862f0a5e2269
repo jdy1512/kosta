@@ -1,0 +1,39 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%@ include file="/WEB-INF/view/menu.jsp" %>
+
+	<h2>회원목록</h2> 	
+
+<!-- 회원정보가 있으면 -->
+	<table width="500" border='1'>
+		<thead>
+			<tr>
+				<td>ID</td>
+				<td>Password</td>
+				<td>이름</td>
+				<td>이름</td>
+				<td>가입일자</td>
+			</tr>
+		</thead>
+		<tbody>
+			
+				<tr>
+					<td>ddd</td>
+					<td>ddd</td>
+					<td>ddd</td>
+					<td>ddd</td>
+					<td>2015-04-02</td>
+				</tr> 
+			
+		</tbody>
+	</table>
+
+	
+</body>
+</html>

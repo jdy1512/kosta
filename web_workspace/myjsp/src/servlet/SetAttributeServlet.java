@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import servlet.vo.Address;
 import servlet.vo.Member;
 
 public class SetAttributeServlet extends HttpServlet{
@@ -19,9 +20,9 @@ public class SetAttributeServlet extends HttpServlet{
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
 		request.setCharacterEncoding("UTF-8");
 		//member 객체 생성.
-		Member member = new Member("id-1","1111","홍길동",20,false);
-		Member member2 = new Member("id-session","2222","임꺽정",30,false);
-		Member member3 = new Member("id-3","3333","심봉사",80,true);
+		Member member = new Member("id-1","1111","홍길동",20,false, new Address("id-1111", "111-111", "집"));
+		Member member2 = new Member("id-session","2222","임꺽정",30,false, new Address("id-2222", "111-111", "집"));
+		Member member3 = new Member("id-3","3333","심봉사",80,true, new Address("id-3333", "111-111", "집"));
 		//request scope binding
 		request.setAttribute("member", member);
 		

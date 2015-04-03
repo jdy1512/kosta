@@ -1,0 +1,35 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>회원 정보</h2>
+	<table border='1' width="500px">
+		<tr>
+			<th width="100px" align="left">ID</th>
+			<td>abc12</td>
+		</tr>
+		<tr>
+			<th align="left">패스워드</th>
+			<td>asd</td>
+		</tr>
+		<tr>
+			<th align="left">이름</th>
+			<td>asdf</td>
+		</tr>
+		<tr>
+			<th align="left">이메일</th>
+			<td>asdf</td>
+		</tr>
+		<tr>
+			<th align="left">가입일자</th>
+			<td>2015-04-02</td>
+		</tr>
+	</table>
+	<p>
+	<a href="/MemberManagerFC/controller?command=modifyForm">회원정보 수정</a> <a href="/MemberManagerFC/controller?command=removeMember">회원 탈퇴</a>
+</body>
+</html>

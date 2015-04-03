@@ -1,0 +1,24 @@
+package common.util;
+
+import common.controller.Controller;
+import common.controller.LinkController;
+
+public class HandlerMapping {
+
+	public static Controller getController(String command) {
+		Controller controller = null;
+
+		if (command.equals("joinMember")) {// 회원가입
+			controller = new JoinMemberController();
+
+		} else if (command.equals("search")) {
+			// controller = new SearchController();
+
+		} else if (command.equals("link")) {
+			controller = new LinkController();
+
+		}
+
+		return controller;
+	}
+}

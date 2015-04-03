@@ -1,0 +1,23 @@
+package member.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import member.model.service.MemberService;
+import member.vo.Member;
+import common.controller.Controller;
+import common.vo.AttributeAndView;
+
+public class LoginController implements Controller {
+
+	@Override
+	public AttributeAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
+		
+		Member member = MemberService.getInstance().getMemberById(id);
+		
+		return null;
+	}
+
+}

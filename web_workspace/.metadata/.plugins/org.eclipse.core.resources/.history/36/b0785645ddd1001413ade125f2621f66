@@ -1,5 +1,0 @@
-package servlet.session.cart;
-
-public class ShoppingCartServlet {
-
-}

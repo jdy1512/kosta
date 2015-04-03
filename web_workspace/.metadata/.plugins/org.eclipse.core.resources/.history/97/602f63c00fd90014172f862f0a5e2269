@@ -1,0 +1,33 @@
+package member.controller;
+
+import java.util.Date;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import member.model.service.MemberService;
+import member.vo.Member;
+import common.controller.Controller;
+import common.vo.AttributeAndView;
+
+public class JoinMemberController implements Controller{
+
+	@Override
+	public AttributeAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+		String id = request.getParameter("id");
+		String password = request.getParameter("password");
+		String name = request.getParameter("name");
+		String email = request.getParameter("email");
+		Date date = new Date();
+		
+		int result = MemberService.getInstance().joinMember(new Member(id, password, name, email, date));
+		
+		if (result == 1) {
+			return new AttributeAndView(false, "/controller?command=joinSuccess&id=" + id);
+		} else {
+			// 에러 페이지 redirect
+			System.err.println("error");
+			return null;
+		}
+	}
+}

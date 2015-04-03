@@ -1,7 +1,0 @@
-package servlet.session.cart;
-
-import javax.servlet.http.HttpServlet;
-
-public class ShowShoppingListServlet extends HttpServlet {
-
-}

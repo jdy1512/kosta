@@ -13,7 +13,7 @@
 	boolean : true/false
 	null - 출력이 안되는 값.
 	- EL에서 리터럴 값 출력 : ${ '값' } - ${ "abc" }, ${ '안녕' }, ${ 10 }
-	-->
+	
 	숫자 : ${ 10 }, ${ 30.7 }<br/>
 	문자열 : ${ "안녕하세요" } - ${ 'Hello World' } - ${ "a" == 'a' } - ${ null }
 	<br/>
@@ -23,5 +23,6 @@
 	${ 10 == 20 } - ${ 10 eq 20 }<br/>
 	<!-- empty 값 - 값이 문자열인 경우, null, length가 0이면 true(빈문자열이냐?) -->
 	empty : ${ empty "a" }, ${ empty product.id }, ${ empty "" }
+	-->
 </body>
 </html>

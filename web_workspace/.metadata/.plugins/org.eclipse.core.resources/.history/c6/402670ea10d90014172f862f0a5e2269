@@ -1,0 +1,65 @@
+package member.model.service;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.Date;
+
+import common.util.DataUtilListener;
+import member.model.dao.MemberDAO;
+import member.vo.Member;
+
+public class MemberService {
+	private static MemberService instance = new MemberService();
+	private static MemberDAO memberDAO;
+	
+	public static MemberService getInstance() {
+		if (memberDAO == null) {
+			memberDAO = MemberDAO.getInstance();
+		}
+		return instance;
+	}
+	
+	public int joinMember(Member member) throws SQLException {
+		int result = 0;
+		Connection conn = null;
+		
+		try {
+			conn = DataUtilListener.getConnection();
+			result = memberDAO.insertMember(conn, member);
+			
+		} finally {
+			DataUtilListener.close(conn);
+		}
+
+		return result;
+	}
+	
+	public void getMemberList() {
+		
+	}
+	
+	public Member getMemberById() {
+		return new Member("1", "2", "3", "4", new Date());
+	}
+	
+	public void modifyMember() {
+		
+	}
+	
+	public void removeMemberById() {
+		
+	}
+
+	// 트랜잭션
+	private void beginTransaction() {
+		
+	}
+	
+	private void endTransaction() {
+		
+	}
+	
+	private void rollback() {
+		
+	}
+}

@@ -1,7 +1,0 @@
-package servlet.cookie;
-
-import javax.servlet.http.HttpServlet;
-
-public class SetCookieServlet extends HttpServlet {
-
-}

@@ -1,0 +1,47 @@
+package common.util;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class UtilManager {
+	private static UtilManager dataUtil = new UtilManager();
+	
+	// 각종 Util 관리
+	private DataUtilListener dataUtilListener;
+	private HandlerMapping handlerMapping;
+	
+	private UtilManager() {
+		dataUtilListener = DataUtilListener.getInstance();
+		handlerMapping = HandlerMapping.getInstance();
+	}
+	
+	public static UtilManager getInstance() {
+		return dataUtil;
+	}
+	
+
+	// ------------------------- DataUtilListener -------------------------
+	
+	public Connection getConnection() throws SQLException {
+		return dataUtilListener.getConnection();
+	}
+	
+	public void close(Connection conn, Statement stmt) throws SQLException {
+		dataUtilListener.close(conn, stmt);
+	}
+	
+	public void close(Connection conn, Statement stmt, ResultSet rset) throws SQLException {
+		dataUtilListener.close(conn, stmt, rset);
+	}
+	
+	// ------------------------- End Of DataUtilListener -------------------------
+	
+
+	// ------------------------- HandlerMapping -------------------------
+	
+	
+
+	// ------------------------- End Of HandlerMapping -------------------------
+}

@@ -1,0 +1,5 @@
+<%@ page contentType="text/html; charset=UTF-8" %>
+<a href='/MemberManagerFC/index.jsp'>메인페이지</a>&nbsp;&nbsp;
+<a href='/MemberManagerFC/controller?command=link&href=/member/join_form.jsp'>회원가입</a>&nbsp;&nbsp;
+<a href="/MemberManagerFC/controller?command=link&href=/member/login_form.jsp">로그인</a>&nbsp;&nbsp;
+<a href="/MemberManagerFC/controller?command=memberList">전체 회원정보 조회</a>&nbsp;&nbsp;
