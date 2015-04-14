@@ -19,17 +19,14 @@ public class FrontController extends HttpServlet{
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//공통적 선처리 작업 
 		request.setCharacterEncoding("UTF-8");
 		
 		try {
 			AttributeAndView av = HandlerMapping.getController(request.getParameter("command"), request, response);
 			
-			// 공통적 후처리 작업 - 응답처리 ( redirect, RequestDispatch- request scope 속성을 binding)
 			if (av.isRedirect()) {
 				response.sendRedirect(av.getUrl());
 			} else {
-				// 만약에 av에 attribute가 있다면 requestScope에 binding
 				Map<String, Object> attributes = av.getAttributes();
 				if (attributes != null && attributes.size() != 0) {
 					Set<String> keys = attributes.keySet();

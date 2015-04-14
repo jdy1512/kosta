@@ -18,7 +18,7 @@
 				<td>ID</td>
 				<td>Password</td>
 				<td>이름</td>
-				<td>이름</td>
+				<td>이메일</td>
 				<td>가입일자</td>
 			</tr>
 		</thead>

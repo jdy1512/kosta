@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function showAddress(zipcode, address){
+   // opener - 팝업창을 띄운 부모창의 window객체를 참조하는 객체.
+   
+   opener.document.join_form.zipcode.value=zipcode;
+   opener.document.join_form.address.value=address;
+   
+   // 부모창.문서.name=join_form인 form.name=address입력폼.value속성에 address 값을 넣어라.
+   
+   var flag = confirm("창을 닫겠습니까?");
+   if (flag) {
+	   window.close();
+   }
+}
+</script>
+</head>
+<body>
+<h2>주소검색</h2>
+<!-- 링크 <a href=""> 에서 자바스크립트 함수를 호출 하는 경우 : href="javascript:함수()" -->
+동 : <input type="text" name="dong"> <input type="button" value="조회"><p>
+<a href="javascript:showAddress('111-222', '경기도 성남시 분당구 삼평동');">111-222 경기도 성남시 분당구 삼평동</a><br>
+<a href="javascript:showAddress('111-333', '경상남도 진주시 삼평동')">111-333 경상남도 진주시 삼평동</a><br>
+<a href="javascript:showAddress('222-333', '전라북도 전주시 삼평동')">222-333 전라북도 전주시 삼평동</a><p>
+<button onclick="window.close();">닫기</button>
+</body>
+</html>

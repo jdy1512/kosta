@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function searchByName(){
+	var nodeList = document.getElementsByName("name");// name = "name" 인 노드들을 조회
+	for (var i = 0; i < nodeList.length; i++) {
+		// nodeList : 배열
+		// nodeList[i] : node객체
+		
+	}
+}
+
+function searchById(){
+	var node = document.getElementById("myid");
+	node.value = "30살";
+}
+function searchByTagName(tagName){//"textarea", "input"
+	
+}
+</script>
+</head>
+<body>
+name=name : 
+<input type="text" name="name">
+<input type="text" name="name">
+<input type="text" name="name">
+<input type="text" name="name">
+<input type="text" name="name">
+<p>
+id=myid : 
+<input type="text" name="age" id="myid">
+<input type="text" name="age" id="myid">
+<input type="text" name="age" id="myid">
+<p>
+<textarea></textarea><br>
+<textarea></textarea><p>
+<input type="button" value="searchByName()호출" onclick="searchByName()">
+<input type="button" value="searchById()호출" onclick="searchById()">
+<input type="button" value="searchByTagName('textarea')호출"  onclick="searchByTagName('textarea')">
+<input type="button" value="searchByTagName('input')호출" onclick="searchByTagName('input')">			    
+</body>
+</html>
+
+
+
+
+
+

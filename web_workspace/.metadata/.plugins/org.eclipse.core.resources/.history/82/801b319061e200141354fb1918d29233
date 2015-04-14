@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.cls{
+	border-style: none;
+}
+table{
+	width: 500px;
+	//border-collapse: collapse;
+}
+table, td, th{
+	border: 1px solid black;
+}
+</style>
+<script type="text/javascript">
+
+
+function getMember(){
+	var member = {"id":"id-123",name:"홍길동",address:"경기도 성남시 분당구 삼평동"};
+	
+	document.getElementById("id").value = member.id;
+	document.getElementById("name").value = member.name;
+	document.getElementById("address").value = member.address;
+}
+function getIds(){
+	var ids = ["id-1", "id-2", "id-3", "id-4", "id-5"];
+	var idSel = document.getElementById("ids");
+	
+	while (idSel.hasChildNodes()) {
+		idSel.removeChild(idSel.firstChild);
+	}
+	for (var idx = 0; idx < ids.length; idx++) {
+		idSel[idx + 1] = new Option(ids[idx]);
+	}
+	idSel[0] = new Option("ID들을 선택하세요");
+}
+
+function getIds2(){
+	var ids = { ids : [ "id-a", "id-b", "id-c", "id-d", "id-e", "id-f", "id-g"] };
+	var idSel = document.getElementById("ids");
+
+	while (idSel.hasChildNodes()) {
+		idSel.removeChild(idSel.firstChild);
+	}
+	for (var i = 0; i < ids.ids.length; i++) {
+		idSel[i + 1] = new Option(ids.ids[i]);
+	}
+	idSel[0] = new Option("ID들을 선택하세요");
+}
+
+function getAllMembers(){
+	
+}
+function getAllMembers2(){
+
+}
+</script>
+</head>
+<body>
+ID : <input type="text" name="id" id="id" class="cls" readonly="readonly"><br>
+이름 : <input type="text" name="name" id="name" class="cls" readonly="readonly"><br>
+주소 : <input type="text" name="address" id="address" size="50" class="cls" readonly="readonly"><br>
+<input type="button" value="회원정보조회" onclick="getMember()"><br>
+
+<select id="ids">
+	<option>ID들을 선택하세요</option>
+</select>
+<input type="button" value="ID들 조회" onclick="getIds()">
+<input type="button" value="ID들 조회2" onclick="getIds2()"><p>
+<table>
+	<thead>
+		<tr>
+			<td>ID</td>
+			<td>이름</td>
+			<td>나이</td>
+		</tr>
+	</thead>
+	<tbody id="tbody"></tbody>
+	<tfoot>
+		<tr>
+			<td colspan="3" align="center">
+				<input type="button" value="회원목록조회" onclick="getAllMembers()">
+				<input type="button" value="회원목록조회-innerHTML" onclick="getAllMembers2()">
+			</td>
+		</tr>
+	</tfoot>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

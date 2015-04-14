@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function forTest(begin, end){
+	var sum = 0;
+	for(var i = begin; i < end; i++){
+		sum = sum + i;
+	}
+	alert("총합 : "+sum);
+}
+function ifTest(){
+	/*
+		if(조건), for(조건), while(조건)
+		Javascript에서는 조건에 boolean(true/false)이외의 모든 값ㄷ르도 들어올 수 있다.
+		1. null, undefined - false
+		2. 숫자 - 0:false, 나머지 : true
+		3. 문자열 - length(글자수)가 0인 문자열 : false, 한글자 이상 : true
+	*/
+	var str = "aa"; 
+	if(str){
+		alert("문자열 :"+str+"-"+true);
+	}else{
+		alert("문자열 :"+str+"-"+false);
+	}
+	//같은 글자인지 비교. ==
+	if(str=="aa"){
+		alert("글자는 aa입니다.");
+	}else{
+		alert("글자는 aa가 아닙니다.");
+	}
+	//숫자
+	var num = 0;
+	num = 10;//양수
+	num = -30;//음수
+	if(num){
+		alert("숫자 :"+num+"-"+true);
+	}else{
+		alert("숫자 :"+num+"-"+false);
+	}
+	//null, undefined - false
+	if(!null){
+		alert(null+"은 false 처리");
+	}
+	if(!undefined){
+		alert(undefined+"는 false 처리");
+	}
+	var variable;
+	alert(variable);
+	
+}
+</script>
+</head>
+<body>
+<button onclick = "forTest(1, 100);">forTest() 호출</button>
+<button onclick="ifTest()">ifTest() 호출</button>
+</body>
+</html>

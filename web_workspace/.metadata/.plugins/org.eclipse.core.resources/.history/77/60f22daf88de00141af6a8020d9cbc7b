@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function selectTest1(){
+	var hpSel = window.document.f1.hp;
+	alert("선택된 item idx : " + hpSel.selectedIndex);// 0부터
+	
+	// 모든 option들을 조회
+	var options = hpSel.options;// option객체[]
+	
+}
+
+function selectTest2(){
+	
+}
+function selectTest3(){
+	//번호가 선택되었으면 전송처리, 번호가 선택 안됐으면 선택하라는 경고를 보여주고 전송하지 않는다.
+	
+}
+</script>
+</head>
+<body>
+<form action="response.jsp" name="f1">
+	<!-- onchange : 선택된 값이 바뀔때마다 발생하는 event인 change 이벤트에 대한 핸들러 -->
+	<select name="hp" onchange="selectTest1()">
+		<option value="default">핸드폰 번호 선택</option>
+		<option>010</option>
+		<option>011</option>
+		<option>016</option>
+		<option>019</option>
+	</select>
+	<input type="button" onclick="selectTest2()" value="전송">
+	<input type="button" onclick="selectTest3()" value="선택된 option의 value조회">	
+</form>
+</body>
+</html>
+
+
+
+
+
+

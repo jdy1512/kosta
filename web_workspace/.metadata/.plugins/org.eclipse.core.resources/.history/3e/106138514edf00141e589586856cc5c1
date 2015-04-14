@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function appendChildTest(){
+	
+} 
+function insertBeforeTest(){
+	//<p style="background-color:orange">삽입될 라인</p>
+	var p = document.createElement("p");
+	p.setAttribute("style", "background-color:orange");
+	var txt = document.createTextNode("삽입될 라인");
+	p.appendChild(txt);
+	var div = document.getElementById("layer");
+	//div.insertBefore(p, div.firstChild); //첫번째 자식요소로 삽입
+	div.insertBefore(p, div.children[1]); //두번째 자식요소로 삽입
+}
+function deleteNodeByIdx(){
+	//id가 idx에 입력된 index를 읽어 그 index의 p(layer 내의) 객체를 삭제
+	var idx = document.getElementById("idx").value;
+	if(window.isNaN(idx)){
+		alert("삭제할 노드 index에는 숫자를 넣으세요");
+		return;
+	}
+	var layer = document.getElementById("layer");
+	
+	layer.removeChild(layer.children[idx]);//자식 노드 삭제 메소드.
+}
+function deleteAllNode(){
+	//div내의 모든 하위노드를 제거(삭제)
+	var layer = document.getElementById("layer");
+	var nodeList = layer.childNodes;
+	var size = nodeList.length;
+	
+	for (var i = size - 1; i >= 0; i--) {
+		layer.removeChild(layer.children[i]);
+	}
+} 
+
+function test(){
+	var layer = document.getElementById("layer");
+	//alert(layer.innerHTML);
+	
+	layer.innerHTML = "<font size='2' color='red'>aaa</font>";
+}
+
+
+</script> 
+</head>
+<body>
+
+
+<div id="layer"> 
+	<p style="background-color:blue">1번 라인</p>
+	<p style="background-color:red">2번 라인</p>
+	<p style="background-color:yellow">3번 라인</p>
+	<p style="background-color:green">4번 라인</p>
+</div>
+<p>
+<input type="button" onclick="appendChildTest()" value="P 요소 추가">
+<input type="button" onclick="insertBeforeTest()" value="P 요소 삽입"><p>
+
+<input type="text" id="idx" placeholder="삭제할 라인의 Index입력" size="20">
+<input type="button" onclick="deleteNodeByIdx();" value="n번째 노드 삭제">
+<input type="button" onclick="deleteAllNode()" value="모든 노드 삭제">
+<input type="button" onclick="test()" value="test">
+</body>
+</html> 
+
+
+
+
+
+
+
+
+

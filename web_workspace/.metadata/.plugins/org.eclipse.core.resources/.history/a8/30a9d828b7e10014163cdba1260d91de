@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function join(){
+		var flag = true;// true -> 전송x
+		
+		if(flag){//true이면 전송이 안되도록 처리
+			alert("사용할 수 없는 ID 입니다.");
+			document.getElementById("id").focus();
+			return !flag;
+		}
+	}
+
+	var xhr;
+	if (window.ActiveXObject) {
+		xhr = new ActiveXObject("Microsoft.XMLHTTP");
+	} else {
+		xhr = new XMLHttpRequest();
+	}
+	xhr.open("POST", "/javascript_class/ajax", true);
+	xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+	xhr.onreadystatechange = idCheckCallback;
+	
+	function idCheck() {
+		var id = document.getElementById("id").value;
+		var checkIdSpanLayer = document.getElementById("check_id");
+		
+		if (id.length < 6) {
+			checkIdSpanLayer.innerHTML = "<font color='red'>ID는 6자리 이상 입력하세요.</font>";
+			return;
+		}
+
+		xhr.send("cmd=idcheck&id=" + id);
+	}
+	
+	function idCheckCallback() {
+		if (xhr.readystate == 4) {
+			if (xhr.status == 200) {
+				checkIdSpanLayer.innerHTML = xhr.responseText;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+<form name="f1" method="post" action="join" onsubmit="return join()">
+ID : <input type="text" name="id" id="id" onkeyup="idCheck();"> <span id="check_id"></span><br>
+password : <input type="password" name="password" id="password"><br>
+가입 양식<p>
+<input type="submit" value="가입">
+</form>
+</body>
+</html>

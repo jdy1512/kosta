@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function inputTest(){
+	// 만약에 id가 6글자 이하면 경고창(alert)
+	var idTxt = window.document.f1.id;
+	if (idTxt.value.length < 6) {
+		alert("ID는 6글자 이상이어야 합니다.");
+		idTxt.focus();
+	}
+	
+	// 패스워드 - 글이 입력됐는지 체크(안됐으면 경고창)
+	var pwdTxt = window.document.f1.password;
+	if (pwdTxt.value.length == 0) {
+		alert("ID는 6글자 이상이어야 합니다.");
+		idTxt.focus();
+	}
+	
+	// 나이 - 글이 입력됐는지 체크(안됐으면 경고창)
+	var ageTxt = window.document.f1.age;
+	if (ageTxt.value.length == 0) {
+		alert("ID는 6글자 이상이어야 합니다.");
+		idTxt.focus();
+	}
+	
+} 
+</script> 
+</head>
+<body>
+<form action="response.jsp" name="f1">
+ID : <input type="text" name="id"><br>
+Password : <input type="password" name="password"><br>
+나이 : <input type="number" name="age"><br>
+자기소개<br>
+<textarea cols="50" rows="10" name="intro"></textarea><p>
+<input type="button" value="txt체크" onclick="inputTest();"><br>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

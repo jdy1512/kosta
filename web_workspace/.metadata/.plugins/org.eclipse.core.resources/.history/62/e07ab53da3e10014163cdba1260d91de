@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function getGreetingPost() {
+		var name = document.getElelmentById("name");
+		
+		if (!name) {
+			alert("조회할 이름을 넣으세요.");
+			return;
+		}
+
+		if (window.ActiveXObject) {
+			xhr = new ActiveXObject("Microsoft.XMLHTTP");
+		} else {
+			xhr = new XMLHttpRequest();
+		}
+		xhr.open("POST", "/javascript/ajax", true);
+		
+		xhr.onreadystatechange = callback();
+		xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	
+		xhr.send("cmd=get_hello&name=" + name);
+	}
+	
+	function callback() {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				document.getElementById("result_layer").innerHTML = "<b>" + xhr.responseText + "</b>";
+			}
+		}
+	}
+
+</script>
+</head>
+<body>
+post_hello.html<p>
+이름 : <input type="text" id="name">
+<input type="button"  value="조회" onclick="getGreetingPost();"><br>
+<div id="result_layer"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

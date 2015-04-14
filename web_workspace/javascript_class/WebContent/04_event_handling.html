@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function idTxtBlur(txt){
+	
+}
+function taInitialize(obj){
+	 
+}
+function checkValue(obj){
+	int len = obj.length;
+	// 문자열의 글자수 체크 : 자바 : "aa".length(), javascript : "aaa".length
+	if (len == 0) {
+		alert("필수입력 사항입니다.");
+	} else if (len > 0) {
+		alert("세글자 이상 입력하세요.");
+	} else if (len >= 3) {
+		alert(obj);
+	}
+	// 한 줄 입력 폼의 글자수 체크
+	// 1. 글자가 입력 안됬으면 "필수입력 사항입니다."
+	// 2. 세글자 미만으로 입력됐으면 "세글자 이상 입력하세요"
+	// 3. 세글자 이상으로 입력됐으면 입력된 글을 그대로 경고창에 보여준다.
+}
+</script>
+</head>
+<body>
+<body onload="alert('페이지가 로딩됩니다.');">
+
+
+
+<form action="01_basic.html" onsubmit="alert('전송합니다.');">
+
+	Text : <input type="text" name="txt"><br>
+	<input type="button" value="버튼" onclick="alert('버튼이 클릭되었습니다.');"><br>
+	
+	<input type="text" value="id : " name="id" ><br>
+	
+	<textarea cols="30" rows="5">자기소개 입력</textarea><p>
+	
+	<input type="text" name="txt2"><p>
+	<input type="submit" value="전송" >
+</form>
+</body>
+</html>
