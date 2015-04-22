@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	/*
+		animate() : 매개변수로 style(css)로 받아서 선택된 노드들의 style을 현재 스타일에서 매개변수로 받은 style로 변환시킴
+		매개변수 : 1. css style 속성 - javascript객체
+				   2. 변환 시간(밀리초) - 숫자
+				   3. 변환 완료 후 호출된 callback 함수 - 함수객체
+	*/
+	$(document).ready(function() {
+		$("li a").hover(function() {
+			
+		}, function() {
+			
+		});
+	});
+	
+</script>
+
+<style type="text/css">
+li{
+	margin: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="divLayer">
+<ul>
+	<li><a href="#">구글</a></li>
+	<li><a href="#">다음</a></li>
+	<li><a href="#">네이트</a></li>
+	<li><a href="#">네이버</a></li>
+
+</ul>
+</div>
+
+</body>
+</html>

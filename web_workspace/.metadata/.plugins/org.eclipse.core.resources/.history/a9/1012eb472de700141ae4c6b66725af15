@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("tbody tr").find("td").on("click", function() {
+			var parent = $(this).parent();
+			
+			var childs = parent.find("td");
+			for (var idx = 0; idx < childs.length; idx++) {
+				alert(childs.get(idx).html);
+			}
+			parent.css("background-color", "red");
+		});
+	});
+	
+</script>
+
+<style type="text/css">
+.desc, #tb tbody{
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div id="cafe">
+카페:
+	<p>
+		<span>커피프랜차이즈</span> 
+		<a href="#">스타벅스</a>
+		<a href="#">커피빈</a>
+		<a href="#">커피베네</a>
+		<a href="#">java카페</a>
+	</p>	
+</div>
+<br>
+<div>
+	포탈 : 
+	<a href="#">구글</a>
+	<a href="#">다음</a>
+	<a href="#">네이트</a>
+	<a href="#">네이버</a>
+</div>
+<hr/>
+<p id="descLayer">
+	<span class="desc">설명 1</span>11<span></span><br>
+	<span class="desc">설명 2</span><span></span><br>
+	<span class="desc">설명 3</span><span></span><br>
+	<span class="desc">설명 4</span><span></span><br>
+</p>
+<hr>
+
+<table border='1' id="tb" width="350px">
+	<thead>
+		<tr>
+			<td>no</td>
+			<td>제목</td>
+			<td>작성자</td>
+			<td>조회수</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>1번글입니다.</td>
+			<td>유재석</td>
+			<td>20</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>2번글입니다.</td>
+			<td>박명수</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>3번글입니다</td>
+			<td>정준하</td>
+			<td>70</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>4번글입니다.</td>
+			<td>길</td>
+			<td>30</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+
+</body>
+</html>
+
+

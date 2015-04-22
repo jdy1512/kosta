@@ -1,0 +1,36 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btn").on("click", function() {
+			var txt = $("form:first").serialize();
+			alert(txt);
+		});
+	});
+</script>
+</head>
+<body>    
+
+<form action="../GetServlet">
+	ID : <input type="text" name="id"><br>
+	이름 : <input type="text" name="name"><br>
+	<input type="hidden" name="command" value="run"> 
+	전송여부 :  <input type="checkbox" name="isSend" value="true"><br>        
+	선택 번호 : 
+	<select name="number">
+		<option>선택하세요</option>
+		<option value="1">일번</option>
+		<option value="2">이번</option>
+		<option value="3">삼번</option>
+	</select><br />     
+	<input type="button" value="ajax전송" id="btn">
+	<input type="submit" value="전송">
+</form>
+
+</body>
+</html>

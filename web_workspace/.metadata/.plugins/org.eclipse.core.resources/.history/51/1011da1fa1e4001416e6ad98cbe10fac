@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<style type="text/css">
+	a{
+		text-decoration: none;
+	}
+</style>
+</head>
+<body> 
+메일 수신여부 : 
+<input type="checkbox" name="mailing" value="true" id="chk"><br>
+<input type="button" value="click" id="btn">
+<p>
+<a href="http://www.google.com">구글</a>
+<a href="http://www.daum.net">다음</a>
+</p>
+<ul>
+	<li>우유</li>
+	<li>빵</li>
+	<li>두유</li>
+	<li>쿠키</li>
+	<li>탄산음료</li>
+</ul>
+</body>
+</html>
+
+
+
+
+
+
+

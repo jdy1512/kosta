@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var xhr;
+	function getMemberList() {
+		if (window.ActiveXObject) {
+			xhr = new ActiveXObject("Microsoft.XMLHTTP");
+		} else {
+			xhr = new XMLHttpRequest();
+		}
+		xhr.open("GET", "/javascript_class/json?cmd=getMemberList", true);
+		xhr.onreadystatechange = callback;
+		xhr.send(null);
+	}
+	
+	function callback() {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				var txt = xhr.responseText;
+				var obj = eval("(" + txt + ")");
+
+				// 1.tbody 조회
+				var tbody = document.getElementById("tbody");
+				
+				// 2.tbody의 하위노드들을 제거
+				while (tbody.hasChildNodes()) {
+					tbody.removeChild(tbody.firstChild);
+				}
+				
+				// 3.tbody에 추가
+				for (var idx = 1; idx <= obj.length; idx++) {
+					var tr = document.createElement("tr");
+					
+					var id = document.createElement("td");
+					id.setAttribute("width", "70");
+					id.appendChild(document.createTextNode(obj[idx].id));
+					tr.appendChild(id);
+					
+					var name = document.createElement("td");
+					name.setAttribute("width", "230");
+					name.appendChild(document.createTextNode(obj[idx].name));
+					tr.appendChild(name);
+					
+					var email = document.createElement("td");
+					email.setAttribute("width", "200");
+					email.appendChild(document.createTextNode(obj[idx].email));
+					tr.appendChild(email);
+					
+					var mileage = document.createElement("td");
+					mileage.setAttribute("width", "100");
+					mileage.appendChild(document.createTextNode(obj[idx].mileage));
+					tr.appendChild(mileage);
+
+					tbody.appendChild(tr);
+				}
+			}
+		}
+	}
+
+</script>
+<style type="text/css">
+table {
+	width:600px;
+	border-collapse: collapse;
+}
+table, td{
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<table >
+	<thead>
+		<tr>
+			<td width="70">ID</td>
+			<td width="230">이름</td>
+			<td width="200">이메일</td>
+			<td width="100">마일리지</td>
+		</tr>
+	</thead>
+	<tbody id="tbody"></tbody>
+</table>
+<p>
+<button onclick="getMemberList();">회원정보 조회</button>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MovieReservation_Web/WebContent/common_pag&apos; to &apos;common&apos;" description="Rename resource &apos;common_pag&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/common_pag" name="common" stamp="1429003499249" updateReferences="true"/>
+</session>

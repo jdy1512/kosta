@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#afterBtn").on("click", function() {
+			$("#child3").after("<font size='2' color='green'>after추가</font>");
+			$("<font size='4' color='pink'>insertAfter추가</font>").insertAfter("#child1");
+		});
+
+		$("#beforeBtn").on("click", function() {
+			$("#child3").after("<font size='2' color='red'>before추가</font>");
+			$("<font size='4' color='blue'>insertBefore추가</font>").insertAfter("#child1");
+		});
+	});
+</script>
+
+</head>
+<body>
+<div id="root">
+	ROOT의 text - 시작	
+	<div id="child1" class="child">1번</div>
+	<div id="child2" class="child">2번</div>
+	
+	<div id="child3" class="child">3번</div>	
+	
+	<div id="child4" class="child">4번</div>
+	ROOT의 text - 종료
+</div>
+<button id="afterBtn">after버튼</button>
+<button id="beforeBtn">before버튼</button>
+<button id="allBtn">all 버튼</button>
+</body>
+</html>
+
+
+

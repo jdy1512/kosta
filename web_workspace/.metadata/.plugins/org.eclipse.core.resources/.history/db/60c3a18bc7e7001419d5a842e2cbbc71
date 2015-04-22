@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#getBtn").on("click", function() {
+			$.get("/jQuery_class/jQueryCtr", {"command":"getData"}, callback);
+		});
+	});
+	
+	function callback(txt) {
+		
+	}
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+<input type="button" value="Get요청" id="getBtn">
+<input type="button" value="Post요청" id="postBtn">
+<div id="showLayer"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btn").on("click", function() {
+			// $("결과를 넣을 노드").load("요청URL", [요청파라미터들], [callback()함수])
+			//$("#first").load("/jQuery_class/jQueryCtr", "command=getData");
+			$("#first").load("/jQuery_class/06_ajax/src.jsp", {"id":"id-10", "pwd":"1111"}, callback);
+		});
+	});
+	
+	// 매개변수(다 생략가능) - 1.응답결과, 2.응답 메세지(success, error), 3.jqXHR(XMLHttpRequest)
+	function callback(res, msg, xhr) {
+		alert("결과를 로딩했습니다.");
+		alert(res);
+		alert(msg + " : " + xhr.status);
+	}
+</script>
+
+</head>
+<body>
+	<input type="button" value="클릭" id="btn">
+	<div id="first"></div>
+</body>
+</html>

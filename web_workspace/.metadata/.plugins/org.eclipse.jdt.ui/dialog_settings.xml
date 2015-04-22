@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="JavaSE-1.7" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
 	<item value="C:\Program Files\Java\jdk1.8.0_25\jre\lib\ext" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>

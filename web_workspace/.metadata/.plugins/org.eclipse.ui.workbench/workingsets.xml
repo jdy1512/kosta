@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1429166720957_1" label="vert.x" name="vert.x">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vertx-testsuite" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vert.x" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vertx-core" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/vertx-platform" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1429168188442_2" label="mod-sample" name="mod-sample">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mod-sample" type="4"/>
+</workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1426056555270_0" label="Window Working Set" name="Aggregate for window 1426056555270"/>
 </workingSetManager>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>filter_selector</title>
+	<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+	<script type="text/javascript">
+		function selectorTest() {
+			//$("tr:first").css("background-color", "red");// 첫번째 tr
+			//$("tr:last").css("background-color", "gold");// 마지막 tr
+			//$("tr:first-child").css("background-color", "pink");// 첫번째 자식노드인 tr
+			//$("tr:last-child").css("background-color", "skyblue");// 마지막 자식노드인 tr
+			
+			$("#memberTb tr:even").css("background-color", "gray");
+			// id가 memberTb인 노드의 자손 노드 중에 짝수번째 index의 tr, index - 0부터 시작
+			$("#memberTb tr:odd").css("background-color", "orange");// odd - 홀수번째
+			$("#memberTb tr:eq(2)").css("color", "blue");// id가 memberTb인 노드의 자손 노드 중에 2번 index
+			$("#memberTb tr:lt(2)").css("font-weight", "bold");// 2번 index보다 작은 index의 tr
+			$("#memberTb tr:gt(2)").css("text-decoration", "underline");// 2번 index보다 큰 index의 tr
+			
+			$("#productTb td:nth-child(3)").css("background-color", "hotpink");
+			// nth-chile(x) : x-숫자 - x번째 자식 노드인 노드객체(td) - x : 1부터 시작
+			$("#productTb td:nth-child(2n)").css("background-color", "cyan");
+			// nth-chile(even) : 짝수번째 자식노드, :nth-child(odd) - 홀수번째 자식노드
+			// :nth-child(3n+1) : 3의 배수 + 1 번째 자식노드
+		}
+		
+		function getTxt() {
+			var txt = document.getElementById("txt").value;
+			var txt2 = $("#txt").val();
+			
+			$("td:contains('" + txt2 +"')").css("color", "red");
+		}
+	</script>
+<style type="text/css">
+table{
+	width: 500px;
+	border-collapse: collapse;
+}
+table,td,th{
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+	<button onclick="selectorTest()">selectorTest</button>
+	<input type="text" id="txt"><input type="button" value="조회" onclick="getTxt()"><p>
+	<table  id="memberTb" >
+		<tr>
+			<td>ID</td>
+			<td>이름</td>
+			<td>주소</td>
+			<td>전화번호</td>
+			<td>마일리지</td>
+		</tr>
+		<tr>
+			<td>aaaa</td>
+			<td>이순신</td>
+			<td>서울</td>
+			<td>02-111-2222</td>
+			<td>30000</td>
+		</tr>
+		<tr>
+			<td>bbbb</td>
+			<td>홍길동</td>
+			<td>인천</td>
+			<td>032-222-3333</td>
+			<td>40000</td>
+		</tr>
+		<tr>
+			<td>cccc</td>
+			<td>유관순</td>
+			<td>부산</td>
+			<td>051-222-3333</td>
+			<td>350000</td>
+		</tr>
+		<tr>
+			<td>dddd</td>
+			<td>장영실</td>
+			<td>광주</td>
+			<td>062-555-6666</td>
+			<td>92000</td>
+		</tr>
+		<tr>
+			<td>eeee</td>
+			<td>김유신</td>
+			<td>경주</td>
+			<td>054-777-1222</td>
+			<td>50000</td>
+		</tr>
+		<tr>
+			<td>ffff</td>
+			<td>계백</td>
+			<td>부여</td>
+			<td>042-421-7334</td>
+			<td>940000</td>
+		</tr>
+	</table>
+	<br>
+	<table  id="productTb" >
+		<tr>
+			<th>상품ID</th>
+			<th>상품명</th>
+			<th>제조사</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<td>p-1</td>
+			<td>LG 3D TV</td>
+			<td>LG 전자</td>
+			<td>230000</td>
+		</tr>
+		<tr>
+			<td>p-2</td>
+			<td>파브 3D TV</td>
+			<td>삼성 전자</td>
+			<td>200000</td>
+		</tr>
+		<tr>
+			<td>p-3</td>
+			<td>하우젠 냉장고</td>
+			<td>삼성 전자</td>
+			<td>150000</td>
+		</tr>
+		<tr>
+			<td>p-4</td>
+			<td>x-note</td>
+			<td>LG 전자</td>
+			<td>320000</td>
+		</tr>
+	</table>
+</body>
+</html>

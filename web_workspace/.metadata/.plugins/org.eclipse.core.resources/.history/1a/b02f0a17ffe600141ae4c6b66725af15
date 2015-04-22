@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+<fieldset>
+	<legend>소스</legend>
+	<div id="source">안녕하세요...출발지의 텍스트입니다.</div>
+</fieldset>
+<fieldset>
+	<legend>타겟</legend>
+	<div id="target">여기는 목적지 입니다.</div>
+</fieldset>
+<button id="appendBtn">append</button>
+<button id="prependBtn">prepend</button>
+<button id="moveBtn">dom node 옮기기</button>
+<p>
+<table border='1'>
+<thead>
+	<tr>
+		<td>ID</td>
+		<td>이름</td>
+		<td>나이</td>
+	</tr>
+</thead>
+<tbody id="tbody">
+	<tr>
+		<td>id-a</td>
+		<td>홍길동</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>id-a</td>
+		<td>홍길동</td>
+		<td>20</td>
+	</tr>	
+	<tr>
+		<td>id-a</td>
+		<td>홍길동</td>
+		<td>20</td>
+	</tr>			
+</tbody>
+<tfoot>
+	<tr>
+		<td colspan='3'><button id="clearBtn">내용 삭제</button></td>
+	</tr>
+</tfoot>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

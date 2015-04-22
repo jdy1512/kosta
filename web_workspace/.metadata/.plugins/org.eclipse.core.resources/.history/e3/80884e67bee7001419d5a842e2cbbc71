@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	
+</script>
+
+</head>
+<body>
+	<input type="button" value="클릭" id="btn">
+	<div id="first"></div>
+</body>
+</html>

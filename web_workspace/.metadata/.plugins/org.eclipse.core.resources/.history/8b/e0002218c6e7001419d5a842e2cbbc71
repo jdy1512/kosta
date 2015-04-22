@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		#("#btn").on("click", function() {
+			$.getJSON("/jQuery_class/jQueryCtr", {"command":"getMemeberByIdJson", "id":"myid"}, function(obj) {
+				var txt = obj.id + "<br/>" + obj.name + "<br/>" + obj.age;
+				$("#first").html(txt);
+			});
+		});
+	});
+</script>
+
+</head>
+<body>
+	<input type="button" value="클릭1" id="btn">
+	<div id="first"></div>
+</body>
+</html>

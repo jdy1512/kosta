@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	/*$(document).ready(function() {
+		$("#hideBtn").on("click", function() {
+			document.getElementById("description").hidden = true;
+		});
+		
+		$("#showBtn").on("click", function() {
+			document.getElementById("description").hidden = false;
+		});
+	});
+	*/
+	
+	/* 특정 노드를 동적으로 나타나게/사라지게 하는 jQuery 메소드
+	   show()/hide() - toggle()
+	   fadeIn()/fadeOut() - fadeToggle()
+	   sildeDown()/slideUp() - sildeToggle()
+	   매개변수 (모두 생략 가능) : 1.숫자 - 밀리초(나타나고, 사라지는데 걸리는 시간)
+	                               2.함수 - 나타나거나 사라지는 것이 완료된 후 호출될 callback 함수
+	
+	$(document).ready(function() {
+		$("#hideBtn").on("click", function() {
+			$("img").hide(1000);
+		});
+		
+		$("#showBtn").on("click", function() {
+			$("img").show(1000, function() {
+				alert("지금 그림은 김홍도의 추수입니다.");
+			});
+		});
+		
+		$("#toggleBtn").on("click", function() {
+			$("img").toggle(1500);
+		});
+	});
+	 */
+	$(document).ready(function() {
+		$("#hideBtn").on("click", function() {
+			$("img").fadeOut(1000);
+		});
+		
+		$("#showBtn").on("click", function() {
+			$("img").fadeIn(1000, function() {
+				alert("지금 그림은 김홍도의 추수입니다.");
+			});
+		});
+		
+		$("#toggleBtn").on("click", function() {
+			$("img").fadeToggle(1500);
+		});
+	});
+</script>
+
+</head>
+<body>
+녹차<br>
+<input type="button" id="hideBtn" value="설명감추기">
+<input type="button" id="showBtn" value="설명보기">
+<input type="button" id="toggleBtn" value="설명보기 토글">
+<p>
+<div id="description">
+	녹차는 건강에 좋은 차입니다. <br>
+	저희는 보성에서 재배된 유기농 녹차를 사용합니다.
+	<br>
+	<img alt="김홍도 씨름" src="pic.jpg">
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#btn").on("click", function() {
+			// $("결과를 넣을 노드").load("요청URL", [요청파라미터들], [callback()함수])
+			//$("#first").load("/jQuery_class/jQueryCtr", "command=getData");
+			$("#first").load("/jQuery_class/ajax/src.jsp", {"id":"id-10", "pwd":"1111"});
+		});
+	});
+</script>
+
+</head>
+<body>
+	<input type="button" value="클릭" id="btn">
+	<div id="first"></div>
+</body>
+</html>

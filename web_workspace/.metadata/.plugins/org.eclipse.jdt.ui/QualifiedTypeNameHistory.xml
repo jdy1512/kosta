@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
-<fullyQualifiedTypeName name="java.net.URLEncoder"/>
-<fullyQualifiedTypeName name="java.net.URLDecoder"/>
-<fullyQualifiedTypeName name="javax.servlet.FilterConfig"/>
-<fullyQualifiedTypeName name="kr.co.kosta.study.moviereservation.vo.Movie"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
-<fullyQualifiedTypeName name="servlet.vo.Address"/>
-<fullyQualifiedTypeName name="calc.model.CalculateService"/>
-<fullyQualifiedTypeName name="calc.model.dao.CalcResultDAO"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="controller.AttributeAndView"/>
@@ -19,7 +9,6 @@
 <fullyQualifiedTypeName name="common.util.UtilManager"/>
 <fullyQualifiedTypeName name="member.controller.JoinMemberController"/>
 <fullyQualifiedTypeName name="member.controller.JoinSuccessController"/>
-<fullyQualifiedTypeName name="org.apache.tomcat.dbcp.dbcp.BasicDataSource"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="member.model.dao.MemberDAO"/>
 <fullyQualifiedTypeName name="common.util.DataUtilListener"/>
@@ -55,9 +44,20 @@
 <fullyQualifiedTypeName name="javax.servlet.annotation.WebFilter"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContextListener"/>
 <fullyQualifiedTypeName name="javax.servlet.annotation.WebListener"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
-<fullyQualifiedTypeName name="org.json.JSONObject"/>
 <fullyQualifiedTypeName name="json.Address"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.dbcp.dbcp.BasicDataSource"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="json.vo.Member"/>
+<fullyQualifiedTypeName name="org.json.JSONObject"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader.Array"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.ConnectionConfiguration"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.packet.Presence"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.XMPPConnection"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.XMPPConnection.FromMode"/>
+<fullyQualifiedTypeName name="org.jivesoftware.smack.tcp.XMPPTCPConnection"/>
 </qualifiedTypeNameHistroy>

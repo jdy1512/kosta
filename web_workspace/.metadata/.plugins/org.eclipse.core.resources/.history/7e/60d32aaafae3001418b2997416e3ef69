@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+	<script type="text/javascript">
+		function selectorTest() {
+			// jQuery객체.css("css속성값", "value") -> jQuery객체가 담고 있는 Node List(DOM 객체들)에 css스타일을 적용하는 메소드
+			jQuery("div").css("border-style", "dotted");// dom tree내의 모든 div
+			jQuery("#title").css("color", "cyan");
+			$("div ul li").css("color", "red");// div 자손인 ul의 자손인 li
+			$("div>ul>li").css("text-decoration", "underline");// div 자식인 ul의 자식인 li ()
+			$("div:has(b)").css("width", "500px");// b노드를 자식으로 가지고 있는 div 노드들
+			$("div:contains('우리커피')").css("font-size", "25px")
+				.css("font-weight", "bold")
+				.css("text-align", "center");// 특정 문자열(우리커피)를 가지고 있는 div노드들
+		}
+		
+	</script>
+</head>
+<body>
+<button onclick="selectorTest();">클릭하세요</button>
+<div id="title">
+	우리커피를 찾아 주셔서 감사합니다.
+</div>
+<!-- div안에 ul -->
+<div>
+	커피 메뉴
+	<ul>
+		<li>아메리카노</li>
+		<li>카페라떼</li>
+		<li>카푸치노</li>
+		<li>카라멜 모카</li>
+		<li>카라멜 마키아토</li>
+	</ul>
+</div>
+<br>
+<!-- <div>-<b>-<ul> -->
+<div>
+	<p>
+		비 커피 메뉴
+	</p>
+	<b>
+		<ul>
+			<li>녹차</li>
+			<li>홍차</li>
+			<li>우롱차</li>
+			<li>국화차</li>		 
+		</ul>
+	</b>
+</div>
+<p id="desc">
+	tel : 02-111-2222, 주소 : 서울
+</p>
+링크<br>
+<a href="#">커피빈</a>
+<a href="#">스타벅스</a>
+<a href="#">카페베네</a>
+<a href="#">자바 커피</a>
+
+
+</body>
+</html>
+
+
+
+

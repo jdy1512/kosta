@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("input[name='allcheck']").on("change", function() {
+			$("input[name='menu']").each(function() {
+				this.checked = !this.checked;
+			});
+		});
+	});
+</script>
+
+</head>
+<body>
+<h2>메뉴</h2>
+<table>
+	<tr>
+		<td><input type="checkbox" name="menu" value="짜장면"></td>
+		<td>짜장면</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="menu" value="짬뽕"></td>
+		<td>짬뽕</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="menu" value="볶음밥"></td>
+		<td>볶음밥</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="menu" value="탕수육"></td>
+		<td>탕수육</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="menu" value="양장피"></td>
+		<td>양장피</td>
+	</tr>
+	<tr>
+		<td><input type="checkbox" name="allcheck"></td>
+		<td><b>전체선택</b></td>
+	</tr>
+</table>
+</body>
+</html>

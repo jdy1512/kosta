@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("input[type='text']").on("blur", function() {
+			$(this).val("입력한 값 : " + this.value);
+		});
+		$(":text").on("focus", function() {
+			$(this).val("");
+		});
+		
+		// select의 선택된 값 조회
+		$("#hp").on("change", function() {
+			var txt = $(this).val();// $(select객체).val() - 선택된 option의 value가 리턴
+			alert("선택된 번호 : " + txt);
+		});
+		$("#selBtn").on("click", function() {
+			alert($("#hp").val());
+		});
+		// checkbox 조회
+		$("#chkBtn").on("click", function() {
+			//alert($("input[name='hobby']").length);
+			//alert($("input[name='hobby']").get(0).value);// get(index) -> index번째의 DOM 노드 객체를 리턴
+			//alert($("input[name='hobby']")[1].value);// jQuery 셀렉터함수 [index] -> get()과 동일
+			var cnt = $("input[name='hobby']:checked").length;
+			alert("체크된 취미의 개수 : " + cnt);
+		});
+	});
+</script>
+
+</head>
+<body>
+<form id="form1" name="form1" action=""	 method="post">
+이름 : <input type="text" name="name" id="name"><br>
+나이 : <input type="text" name="age" id="age"><br>
+
+전화 : <select id="hp">
+			<option value="010">공통</option>
+			<option>011</option>
+			<option>016</option>
+			<option>019</option>
+		</select>
+		<input type="button" id="selBtn" value="번호조회">
+		<br>
+취미 : 
+영화감상 <input type="checkbox" name="hobby" value="영화감상" id="hk">
+음악감상 <input type="checkbox" name="hobby"  value="음악감상">
+독서 <input type="checkbox" name="hobby"  value="독서">
+운동 <input type="checkbox" name="hobby"  value="운동">
+<input type="button" value="체크박스조회" id="chkBtn">
+
+</form>
+선택된 체크박스 : <span id="showLayer"></span>
+</body>
+</html>

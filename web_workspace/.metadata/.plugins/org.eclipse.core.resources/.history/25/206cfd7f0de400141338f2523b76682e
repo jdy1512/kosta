@@ -1,0 +1,7 @@
+modulename=me.vertx.helloworld
+version=0.1
+gradleVersion=1.1
+vertxVersion=2.1.5-SNAPSHOT
+
+junitVersion=4.10
+rhinoVersion=1.7R4

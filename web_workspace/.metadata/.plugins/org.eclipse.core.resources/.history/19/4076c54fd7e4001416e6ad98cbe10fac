@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("input[type='text']").on("blur", function() {
+			$(this).val("입력한 값 : " + this.value);
+		});
+		$(":text").on("focus", function() {
+			$(this).val("");
+		});
+		
+		// select의 선택된 값 조회
+		$("#hp").on("change", function() {
+			var txt = $(this).val();// $(select객체).val() - 선택된 option의 value가 리턴
+			alert("선택된 번호 : " + txt);
+		});
+	});
+</script>
+
+</head>
+<body>
+<form id="form1" name="form1" action=""	 method="post">
+이름 : <input type="text" name="name" id="name"><br>
+나이 : <input type="text" name="age" id="age"><br>
+
+전화 : <select id="hp">
+			<option value="010">공통</option>
+			<option>011</option>
+			<option>016</option>
+			<option>019</option>
+		</select>
+		<button id="selBtn">select 체크 조회</button>
+		<br>
+취미 : 
+영화감상 <input type="checkbox" name="hobby" value="영화감상" id="hk">
+음악감상 <input type="checkbox" name="hobby"  value="음악감상">
+독서 <input type="checkbox" name="hobby"  value="독서">
+운동 <input type="checkbox" name="hobby"  value="운동">
+<input type="button" value="체크박스조회" id="chkbtn">
+
+</form>
+선택된 체크박스 : <span id="showLayer"></span>
+</body>
+</html>

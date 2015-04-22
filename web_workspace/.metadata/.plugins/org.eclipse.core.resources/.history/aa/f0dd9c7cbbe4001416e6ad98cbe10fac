@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	var idx = 1;
+	$(document).ready(function() {
+		$(":checkbox").on("click", function() {
+			alert("체크박스 클릭 : " + this.value);
+		});// input type="checkbox"
+		
+		$("#btn").on("click", function() {
+			var txt = "<input type='checkbox' value='생성된 checkbox : " + (idx++) + "'>";
+		});
+	});// end of ready
+</script>
+
+</head>
+<body>
+체크박스 : <input type="checkbox" value="1번 체크박스" name="chk">
+<input type="button" value="체크박스 생성" id="btn">
+<div id="btn_layer"></div>
+</body>
+</html>
+
+
+
+
+
+

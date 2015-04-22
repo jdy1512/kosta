@@ -1,0 +1,42 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#ajaxBtn").on("click", function() {
+			$.ajax({
+				"url":"/jQuery_class/jQueryCtr",// 요청 url 설정
+				"type":"POST",// HTTP 요청 방식(method)
+				"data":{"command":"getMemberById", "id":$("#id").val()},// 요청 파라미터(객체, QueryString)
+				"dataType":"text",// 응답데이터 형식 지정(text:기본, json, jsoup, xml) - text일때 생략가능
+			});
+		});
+	});
+</script>
+     
+</head>
+<body>    
+  
+<form>
+	ID : <input type="text" name="id" id="id">
+	<input type="button" value="ajax전송" id="ajaxBtn">
+	<input type="button" value="json전송" id="jsonBtn">
+</form>
+<div id="layer"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

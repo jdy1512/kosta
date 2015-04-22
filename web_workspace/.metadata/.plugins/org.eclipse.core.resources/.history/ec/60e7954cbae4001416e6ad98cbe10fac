@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+체크박스 : <input type="checkbox" value="1번 체크박스" name="chk">
+<input type="button" value="체크박스 생성" id="btn">
+<div id="btn_layer"></div>
+</body>
+</html>
+
+
+
+
+
+

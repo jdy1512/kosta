@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// next() : 바로 다음 형제노드(텍스트 노드 제외)
+		// prev() : 바로 전 형제노드(텍스트 노드 제외)
+		//$(".third-item").css("background-color", "orange").next().css("background-color", "brown")
+		//				.end().prev().css("background-color", "olive");
+		
+		// nextAll() 다음의 모든 형제노드.
+		// prevAll() 이전의 모든 형제노드.
+		// sibilings() 모든 형제노드들.
+		$(".third-item").nextAll(".a").css({"text-decoration":"underline",
+											"font-weight":"bold",
+											"color":"green"})
+						.end().prevAll().css("color", "red")
+						.end().siblings().css("background-color", "olive");
+	});
+</script>
+
+</head>
+<body>
+<ul id="ul1">
+   <li>list item 1</li>
+   <li>list item 2</li>
+   <li class="third-item">list item 3</li>
+   <li>list item 4</li>
+   <li>list item 5</li>
+</ul>
+<ul id="ul2">
+   <li>list item 1</li>
+   <li>list item 2</li>
+   <li class="third-item">list item 3</li>
+   <li>list item 4</li>
+   <li>list item 5</li>
+   <li class='a'>list item 6</li>
+   <li class='a'>list item 7</li>
+   <li class='a'>list item 8</li>
+   <li>list item 9</li>
+</ul>
+<ul id="ul3">
+   <li>list item 1</li>
+   <li>list item 2</li>
+   <li class="third-item">list item 3</li>
+   <li>list item 4</li>
+   <li>list item 5</li>
+   <li class='a'>list item 6</li>
+   <li class='a'>list item 7</li>
+   <li class='a'>list item 8</li>
+   <li>list item 9</li>
+</ul>
+
+
+</body>
+</html>
+
+

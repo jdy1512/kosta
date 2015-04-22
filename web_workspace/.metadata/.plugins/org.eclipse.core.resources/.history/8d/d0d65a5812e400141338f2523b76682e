@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	// 페이지가 로딩시에 특정 함수를 실행
+	/*
+	 *  1.onload event handler 추가
+	 	2.함수 실행 구문을 <script>에 추가
+	 		(함수)([전달인자]);
+	 	3.jQuery - ready() 함수 이용
+	 */
+	(alert)();
+	 	
+	(function test1(x) {
+	 alert("test1() 실행 : " + x);
+	})(30);// 30은 test1에 전달한 전달 인자값.
+	
+	$(document).ready();
+	
+</script>
+</head>
+<body onload="alert('onload 핸들러 실행');">
+	<button>버튼입니다.</button>
+</body>
+</html>

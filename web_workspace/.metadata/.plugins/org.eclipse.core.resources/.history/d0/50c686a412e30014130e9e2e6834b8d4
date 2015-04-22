@@ -1,0 +1,53 @@
+package json.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.json.JSONObject;
+
+import json.vo.Member;
+
+@WebServlet("/json")
+public class JSONServlet extends HttpServlet {
+
+	@Override
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doPost(req, resp);
+	}
+	
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setCharacterEncoding("utf-8");
+		String cmd = req.getParameter("cmd");
+		
+		if (cmd.equals("searchMemberById")) {
+			searchMemberById(req, resp);
+		} else if (cmd.equals("")) {
+			
+		} else if (cmd.equals("")) {
+			
+		}
+		
+	}
+
+	private void searchMemberById(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+		// 요청 파라미터 조회
+		String id = req.getParameter("id");
+		System.out.println(id);
+		// 비지니스 로직 처리 - Model을 호출
+		Member result = new Member(id, "김철수", "kim@abc.com", 23000, false);
+		// 응답처리
+		resp.setContentType("text/html;charset=utf-8");
+		PrintWriter out = resp.getWriter();
+		JSONObject obj = new JSONObject(result);
+		out.print(obj);
+	}
+	
+	
+}

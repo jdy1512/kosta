@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#hideBtn").on("click", function() {
+			document.getElementById("description").hide = true;
+		});
+		
+		$("#showBtn").on("click", function() {
+			document.getElementById("description").hide = false;
+		});
+	});
+</script>
+
+</head>
+<body>
+녹차<br>
+<input type="button" id="hideBtn" value="설명감추기">
+<input type="button" id="showBtn" value="설명보기">
+<input type="button" id="toggleBtn" value="설명보기 토글">
+<p>
+<div id="description">
+	녹차는 건강에 좋은 차입니다. <br>
+	저희는 보성에서 재배된 유기농 녹차를 사용합니다.
+	<br>
+	<img alt="김홍도 씨름" src="pic.jpg">
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

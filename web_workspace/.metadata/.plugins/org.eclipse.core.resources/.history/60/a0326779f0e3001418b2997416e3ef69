@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+</head>
+<body>
+<div id="title">
+	우리커피를 찾아 주셔서 감사합니다.
+</div>
+<!-- div안에 ul -->
+<div>
+	커피 메뉴
+	<ul>
+		<li>아메리카노</li>
+		<li>카페라떼</li>
+		<li>카푸치노</li>
+		<li>카라멜 모카</li>
+		<li>카라멜 마키아토</li>
+	</ul>
+</div>
+<br>
+<!-- <div>-<b>-<ul> -->
+<div>
+	<p>
+		비 커피 메뉴
+	</p>
+	<b>
+		<ul>
+			<li>녹차</li>
+			<li>홍차</li>
+			<li>우롱차</li>
+			<li>국화차</li>		 
+		</ul>
+	</b>
+</div>
+<p id="desc">
+	tel : 02-111-2222, 주소 : 서울
+</p>
+링크<br>
+<a href="#">커피빈</a>
+<a href="#">스타벅스</a>
+<a href="#">카페베네</a>
+<a href="#">자바 커피</a>
+
+
+</body>
+</html>
+
+
+
+

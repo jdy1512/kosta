@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var xhr;
+	function getMemberList() {
+		if (window.ActiveXObject) {
+			xhr = new ActiveXObject("Microsoft.XMLHTTP");
+		} else {
+			xhr = new XMLHttpRequest();
+		}
+		xhr.open("GET", "/javascript_class/json?cmd=getMemberList", true);
+		xhr.onreadystatechange = callback;
+		xhr.send(null);
+	}
+	
+	function callback() {
+		if (xhr.readyState == 4) {
+			if (xhr.status == 200) {
+				var txt = xhr.responseText;
+				var obj = eval("(" + txt + ")");
+				//alert(obj);
+				var tbody = document.getElementById("tbody");
+				
+				for (var idx = 1; idx <= obj.length; idx++) {
+					var tr = document.createElement("tr");
+					
+					var id = document.createElement("td");
+					var name = document.createElement("td");
+					var email = document.createElement("td");
+					var mileage = document.createElement("td");
+					id.setAttribute("width", "70");
+					name.setAttribute("width", "230");
+					email.setAttribute("width", "200");
+					mileage.setAttribute("width", "100");
+					alert(obj[idx].id);
+					id.appendChild(document.createElement(obj[idx].id));
+					name.appendChild(document.createElement(obj[idx].name));
+					email.appendChild(document.createElement(obj[idx].email));
+					mileage.appendChild(document.createElement(obj[idx].mileage));
+					
+					tr.appendChild(id);
+					tr.appendChild(name);
+					tr.appendChild(email);
+					tr.appendChild(mileage);
+
+					tbody.appendChild(tr);
+				}
+			}
+		}
+	}
+
+</script>
+<style type="text/css">
+table {
+	width:600px;
+	border-collapse: collapse;
+}
+table, td{
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<table >
+	<thead>
+		<tr>
+			<td width="70">ID</td>
+			<td width="230">이름</td>
+			<td width="200">이메일</td>
+			<td width="100">마일리지</td>
+		</tr>
+	</thead>
+	<tbody id="tbody"></tbody>
+</table>
+<p>
+<button onclick="getMemberList();">회원정보 조회</button>
+</body>
+</html>

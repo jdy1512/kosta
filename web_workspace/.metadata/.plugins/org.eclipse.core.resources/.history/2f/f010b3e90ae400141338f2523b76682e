@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	function selectorText() {
+		$("a[href]").css("cursor", "pointer");// href 속성을 가진 a 요소
+		$("a[href='HelloServlet']").css("text-decoration", "none");// href=HelloServlet 속성을 가진 a 요소
+	}
+</script>
+<style type="text/css">
+a{
+	cursor: crosshair;
+}
+</style>
+</head>
+<body>
+<div>
+	<div>포탈 링크</div>
+	<a href="http://www.google.co.kr">구글</a><br>
+	<a href="http://www.daum.net">다음</a><br>
+	<a href="http://www.nate.com">네이트</a><br>
+	<a href="http://www.naver.com">네이버</a><br>
+</div>
+<div>
+	<div>서블릿 링크</div>
+	<a href="StartServlet">StartServlet</a><br>
+	<a href="HelloServlet">HelloServlet</a><br>
+	<a href="CountController">CountController</a><br>
+</div>
+</body>
+</html>
+
+
+
+
+

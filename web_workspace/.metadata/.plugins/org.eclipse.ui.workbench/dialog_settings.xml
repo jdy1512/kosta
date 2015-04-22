@@ -8,12 +8,16 @@
 		<item value="594" key="dialogHeight"/>
 		<item value="1152" key="dialogWidth"/>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 		<list key="orderedElements">
+			<item value="org.eclipse.ui.console.ConsoleView"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
 		</list>
 		<list key="textArray">
+			<item value="console"/>
 		</list>
 	</section>
 	<section name="PreferencesImportWizard">
@@ -33,6 +37,7 @@
 		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.springsource.ide.eclipse.gradle.wizards.import.category"/>
 		</list>
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
@@ -40,10 +45,15 @@
 	</section>
 	<section name="PreferencesExportWizard">
 		<item value="C:\Users\KOSTA_03_001_\Desktop\kosta\lecture\eclipse_web_preferences.epf" key=""/>
+		<item value="C:\Users\KOSTA_03_001_\Desktop\mylibrary\developers\eclipse_prof.epf" key=""/>
 		<item value="false" key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
-		<item value="true" key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID"/>
+		<item value="false" key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\KOSTA_03_001_\Desktop\mylibrary\developers\eclipse_prof.epf"/>
 			<item value="C:\Users\KOSTA_03_001_\Desktop\kosta\lecture\eclipse_web_preferences.epf"/>
+		</list>
+		<list key="WizardPreferencesExportPage1.TRANSFER_PREFERENCES_NAMES_ID">
+			<item value="org.eclipse.jdt.internal.ui.transfer.codestyle"/>
 		</list>
 	</section>
 </section>

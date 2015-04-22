@@ -1,0 +1,37 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#getBtn").on("click", function() {
+			$.get("/jQuery_class/jQueryCtr", {"command":"getData"}, callback);
+		});
+	});
+</script>
+     
+</head>
+<body>    
+  
+<form>
+	ID : <input type="text" name="id" id="id">
+	<input type="button" value="ajax전송" id="ajaxBtn">
+	<input type="button" value="json전송" id="jsonBtn">
+</form>
+<div id="layer"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

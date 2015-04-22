@@ -1,0 +1,81 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#jsonBtn").on("click", function(){
+			$.ajax({
+				url:"/jQuery_class/jQueryCtr",
+				type:"POST",
+				data:"command=getMemberByIdJson&id=" + $("#id").val(),
+				dataType:"JSON",// javascript객체로 변환해서 응답데이터를 전달.
+				beforeSend:function(){
+					if (!$("#id").val()) {
+						alert("아이디 입력하세요");
+						return false;
+					}
+				},
+				error:errorCallback,
+				success:function(obj) {// obj - javascript객체
+					alert(obj);
+				}
+			});
+		});
+		
+		$("#ajaxBtn").on("click", function() {
+			$.ajax({
+				"url":"/jQuery_class/jQueryCtr",// 요청 url 설정
+				"type":"POST",// HTTP 요청 방식(method)
+				"data":{"command":"getMemberById", "id":$("#id").val()},// 요청 파라미터(객체, QueryString)
+				"dataType":"text",// 응답데이터 형식 지정(text:기본, json, jsoup, xml) - text일때 생략가능
+				"success":function(txt){// 매개변수 : 1.응답데이터, 2.응답메세지, 3.XMLHttpRequest
+					// 정상 응답(status=200)이 온 경우 호출할 함수객체 등록
+					// alert(txt);
+					$("#layer").html(txt);
+				},
+				"beforeSend":function(){
+					// 요청 전에 호출할 함수를 등록 - return false 시 요청이 중단.
+					if (!$("#id").val()) {// 입력된 id값이 없다면
+						alert("조회할 ID를 입력하세요");
+						$("#layer").html("");
+						$("#id").focus();
+						return false;
+					}
+				},
+				"error":errorCallback // 서버로부터 오류 응답이 온 경우(status!=200) 호출할 함수객체 등록
+			});
+		});
+	});
+	
+	// 오류 응답시 호출할 함수 - 매개변수: 1.XMLHttpRequest, 2.응답 메세지(success||error), 3.에러 메세지
+	function errorCallback() {
+		
+	}
+</script>
+     
+</head>
+<body>    
+  
+<form>
+	ID : <input type="text" name="id" id="id">
+	<input type="button" value="ajax전송" id="ajaxBtn">
+	<input type="button" value="json전송" id="jsonBtn">
+</form>
+<div id="layer"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

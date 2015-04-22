@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/jQuery_class/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#showBtn").on("click", function() {
+			var txt = $("#dataLayer").text();// 선택된 노드의 하위 노드중 text노드만 조회해 문자열로 리턴
+			var html = $("#dataLayer").html();// 선택된 하위 노드 모두를 조회해 문자열로 리턴
+			alert(txt);
+			alert(html);
+		});
+		$("#txtBtn").on("click", function() {
+			$("#showLayer").text("");// 선택된 하위 노드에 매개변수로 넣은 문자열로 변경
+		});
+	});
+</script>
+
+</head>
+<body>
+<div id="dataLayer">
+	<font size=2 color="#FFDD33">안녕하세요</font>
+	<b>반갑습니다.</b>
+</div>
+<div id="showLayer"></div>
+<input type="button" value="조회버튼" id="showBtn">
+<input type="button" value="text입력" id="txtBtn">
+<input type="button" value="html입력" id="htmlBtn"><br>
+
+</body>
+</html>
