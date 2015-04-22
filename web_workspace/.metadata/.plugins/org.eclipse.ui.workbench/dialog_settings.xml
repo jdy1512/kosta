@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="158" key="DIALOG_X_ORIGIN"/>
-		<item value="32" key="DIALOG_Y_ORIGIN"/>
+		<item value="251" key="DIALOG_X_ORIGIN"/>
+		<item value="80" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item value="594" key="dialogHeight"/>
@@ -44,10 +44,10 @@
 		</list>
 	</section>
 	<section name="PreferencesExportWizard">
-		<item value="C:\Users\KOSTA_03_001_\Desktop\kosta\lecture\eclipse_web_preferences.epf" key=""/>
 		<item value="C:\Users\KOSTA_03_001_\Desktop\mylibrary\developers\eclipse_prof.epf" key=""/>
-		<item value="false" key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
-		<item value="false" key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID"/>
+		<item value="C:\Users\KOSTA_03_001_\Desktop\mylibrary\developers\eclipse_prof.epf" key=""/>
+		<item value="true" key="WizardPreferencesExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
+		<item value="true" key="WizardPreferencesExportPage1.EXPORT_ALL_PREFERENCES_ID"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
 			<item value="C:\Users\KOSTA_03_001_\Desktop\mylibrary\developers\eclipse_prof.epf"/>
 			<item value="C:\Users\KOSTA_03_001_\Desktop\kosta\lecture\eclipse_web_preferences.epf"/>
